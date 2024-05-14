@@ -35,6 +35,12 @@ print("third variable is ", name3)
 print("second variable is ", name2)
 print("first variable", name1)
 # Look at the code above , and look at your code , try to think or analyze it
+
+#task 8 vol.2
+name1,name2,name3=input("enter first variable:"),input("enter second variable"),input("enter third variable")
+print("third variable is ", name3,"second variable is ", name2, "first variable", name1)
+
+
 # task8*
 print("I***like***Python")
 # That is ok
@@ -67,7 +73,12 @@ c = b+1
 print(a)
 print(b)
 print(c)
-
+#task 11 vol.2
+a = int(input())
+b = a+1
+c = b+1
+print(a, b, c, sep='\n')
+1
 # Too many prints , you can improve the code , look at the code bellow
 
 num = int(input())
@@ -98,8 +109,8 @@ print(V, "volume")
 print("a,b")
 a = int(input())
 b = int(input())
-f = 3*(a+b)*(a+b)*(a+b)+275*b*b-127*a-41
-print("3*(a+b)*(a+b)*(a+b)+275*b*b-127*a-41 =", f)
+f = 3 * (a + b) * (a + b ) * (a + b) + 275 * b * b - 127 * a - 41
+print("3 * (a + b) * (a + b ) * (a + b) + 275 * b * b - 127 * a - 41 =", f)
 # Good job , but Spaces one more time
 #
 #
