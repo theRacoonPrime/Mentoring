@@ -1,3 +1,3 @@
 print("*****************\n*               *\n*               *\n*****************")
 
-# Should be 4 stars not 2
+#  There is a simple solution to ,  that is look strange . Try to find a little bit different solution
