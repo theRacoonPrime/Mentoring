@@ -19,8 +19,12 @@
 # task_4 = '\n4 \n8 \n15 \n16 \n23 \424 \n8 \n15 \n16 \n23 \n42'
 # print(task_4)
 
-# task_5 = ('\n* \n** \n*** \n**** \n***** \n****** \n*******')
-# print(task_5)
+# # task_5
+# i = 1
+# while i <= 7:
+#     print('*' * i)
+#     i = i + 1
+
 
 # task_6 = input('Как тебя зовут? ')
 # print('Привет! ' + task_6)
