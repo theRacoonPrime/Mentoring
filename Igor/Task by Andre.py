@@ -21,10 +21,10 @@
 
 # # task_5
 # i = 1
-# while i <= 7:
+# num = int(input())
+# while i <= num:
 #     print('*' * i)
 #     i = i + 1
-
 
 # task_6 = input('Как тебя зовут? ')
 # print('Привет! ' + task_6)
@@ -102,8 +102,36 @@
 # print(разность)
 # print(произведение)
 
+# task_23
+# centimeter = int(input())
+# metr = centimeter * 100
+# print(metr)
 
+# task_21
+# number = int(input())
+# print(number, number * 2, number * 3, number * 4, number * 5, sep='///')
 
+# task_24 Я БЛЯТЬ ГОЛОВУ СЕБЕ СЛОМАЛ ПОКА ЭТУ ФОРМУЛУ ПРИДУМАЛ...
+# mandarins = int(input())
+# students = int(input())
+# result_1 = mandarins / student
+# result_2 = (int(result_1) * students) - mandarins #Эту...
+# print(int(result_1))
+# print(abs(result_2))
 
+# task_25
+# import math
+# n = int(input(''))
+# if int(n / 2):
+#     print(int(n / 2))
+# else: print(n / 2 + 1) УЗНАТЬ ПОЧЕМУ НЕ РАБОТАЕТ
 
+# task_25_1
+import math
+n = int(input(''))
+if n / 2:
+    answer = int(n / 2)
+else:
+    answer = int(n / 2 + 1)
+print(answer)           #Тоже узнать
 
