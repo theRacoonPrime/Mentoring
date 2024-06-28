@@ -30,8 +30,8 @@
 # print(f'\n{task_9_3}\n{task_9_2}\n{task_9_1}')
 
 
-# task_10 = ('i', 'like', 'python') Разобрать еще раз, не понял.
-# print(*task_10, sep='***') /Не совсем понял, как работает, зачем нужна "*" перед"task_10". Обязательно ли sep писать в "print"
+# task_10 = ('i', 'like', 'python')# Разобрать еще раз, не понял.
+# print(*task_10, sep='***')# /Не совсем понял, как работает, зачем нужна "*" перед"task_10". Обязательно ли sep писать в "print"
 
 # task_11 = input()
 # print("Hello, " + task_11, end='!')
@@ -112,11 +112,11 @@
 # else: print(n / 2 + 1) УЗНАТЬ ПОЧЕМУ НЕ РАБОТАЕТ
 
 # task_25_1
-import math
-n = int(input(''))
-if n / 2:
-    answer = int(n / 2)
-else:
-    answer = int(n / 2 + 1)
-print(answer)           #Тоже узнать
+# import math
+# n = int(input(''))
+# if n / 2:
+#     answer = int(n / 2)
+# else:
+#     answer = int(n / 2 + 1)
+# print(answer)           #Тоже узнать
 
