@@ -10,7 +10,7 @@
 # print(task_4)
 
 # task_5
-# print('\n\* \n\** \n\*** \n\**** \n\***** \n\****** \n\*******')
+# print('\n \\* \n \\** \n \\*** \n \\**** \n \\***** \n \\****** \n \\*******')
 
 # task_6 = input('What is your name? ')
 # print('Hello! ' + task_6)
@@ -30,16 +30,18 @@
 # print(f'\n{task_9_3}\n{task_9_2}\n{task_9_1}')
 
 
-# task_10 = ('i', 'like', 'python')# Разобрать еще раз, не понял.
-# print(*task_10, sep='***')# /Не совсем понял, как работает, зачем нужна "*" перед"task_10". Обязательно ли sep писать в "print"
+# task_10 = ('i', 'like', 'python')  # Разобрать еще раз, не понял.
+# first, like, python = task_10
+# print(task_10[::2])
+# print(f"first = {first} like = {like} python = {python} first element = {task_10[0]}")
+# print(*task_10, sep='***')
 
 # task_11 = input()
 # print("Hello, " + task_11, end='!')
 
-# task_12_1 = input()
-# task_12_2 = input()
-# task_12_3 = input()
-# task_12_4 = input()
+
+
+# task_12_1, task_12_2, task_12_3, task_12_4 = input(), input(), input(), input()
 # print(task_12_2, task_12_3, task_12_4, sep=task_12_1)
 
 # task_13 = int(input())
@@ -47,11 +49,8 @@
 # third_number = second_number + 1
 # print(f'\n{task_13}\n{second_number}\n{third_number}')
 
-
-# task_14 = int(input())
-# task_14_1 = int(input()) + task_14
-# task_14_2 = int(input()) + task_14_1
-# print (task_14_2)
+# task_14 = int(input("Enter first number: "))+int(input("Enter second number: "))+int(input("Enter third number: "))
+# print (task_14)
 
 # task_15
 # a = int(input())
@@ -66,26 +65,24 @@
 # print(f)
 
 # task_17 = int(input("Enter your number:"))
-# print(f'Следующее за числом {task_17} число: {task_17 + 1}\nДля числа {task_17} предыдущее число: {task_17 - 1}') #я сам не понял, почему без "f" он пишет что это str (разобрать)
+# print(f'next to the number {task_17} number: {task_17 + 1}\nFor number {task_17} last to the number: {task_17 - 1}') #я сам не понял, почему без "f" он пишет что это str (разобрать)
 # print(f'')
 
 # task_18
-# стоимость_монитора = int(input())
-# стоимость_системного_блока = int(input())
-# стоимость_клавиатуры = int(input())
-# стоимость_мыши = int(input())
-# общая_стоимость = стоимость_монитора + стоимость_системного_блока + стоимость_клавиатуры + стоимость_мыши
-# print(общая_стоимость)
+# monitor_value = int(input())
+# system_block_value = int(input())
+# keyboard_value = int(input())
+# mouse_value = int(input())
+# total_value = (monitor_value + system_block_value + keyboard_value + mouse_value) * 3
+# print(total_value)
 
-# task 18
+# task 19
 # first = int(input())
 # second = int(input())
-# сумма = first + second
-# разность = first - second
-# произведение = first * second
-# print(сумма)
-# print(разность)
-# print(произведение)
+# amount = first + second
+# difference = first - second
+# multiplication = first * second
+# print(f'{amount}\n{difference}\n{multiplication}')
 
 # task_23
 # centimeter = int(input())
@@ -93,8 +90,8 @@
 # print(metr)
 
 # task_21
-# number = int(input())
-# print(number, number * 2, number * 3, number * 4, number * 5, sep='///')
+number = int(input())
+print(number, number * 2, number * 3, number * 4, number * 5, sep='///')
 
 # task_24 Я БЛЯТЬ ГОЛОВУ СЕБЕ СЛОМАЛ ПОКА ЭТУ ФОРМУЛУ ПРИДУМАЛ...
 # mandarins = int(input())
@@ -102,21 +99,14 @@
 # result_1 = mandarins / student
 # result_2 = (int(result_1) * students) - mandarins #Эту...
 # print(int(result_1))
-# print(abs(result_2))
+# print(abs(result_2)) #Я понимаю, что тут другое решение, но я не понимаю, как
 
-# task_25
-# import math
-# n = int(input(''))
-# if int(n / 2):
-#     print(int(n / 2))
-# else: print(n / 2 + 1) УЗНАТЬ ПОЧЕМУ НЕ РАБОТАЕТ
-
-# task_25_1
-# import math
-# n = int(input(''))
-# if n / 2:
-#     answer = int(n / 2)
+#task_25
+# n = int(input())
+# if n % 2 == 0:
+#     print(n // 2)
 # else:
-#     answer = int(n / 2 + 1)
-# print(answer)           #Тоже узнать
+#     print(n // 2 + 1)
+
+
 
