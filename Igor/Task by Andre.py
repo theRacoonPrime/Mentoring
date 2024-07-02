@@ -90,8 +90,8 @@
 # print(metr)
 
 # task_21
-number = int(input())
-print(number, number * 2, number * 3, number * 4, number * 5, sep='///')
+# number = int(input())
+# print(number, number * 2, number * 3, number * 4, number * 5, sep='///')
 
 # task_24 Я БЛЯТЬ ГОЛОВУ СЕБЕ СЛОМАЛ ПОКА ЭТУ ФОРМУЛУ ПРИДУМАЛ...
 # mandarins = int(input())
@@ -108,5 +108,11 @@ print(number, number * 2, number * 3, number * 4, number * 5, sep='///')
 # else:
 #     print(n // 2 + 1)
 
-
+#task_20
+# a_1 = int(input('Enter the first element of the arithmetic progression: '))
+# d = int(input('Enter the difference (step) of the arithmetic progression: '))
+# n = int(input('Enter the number of elements of the arithmetic progression: '))
+# a_n = a_1 + d * (n - 1)
+# for item in range (a_1, a_n + 1, d): #Я написал сначала самастоятельно, но потом решил проверить. несмотря на то, что моя прогрессия работала, нейросеть сказала, что я допустил ошибку. я не написал (a_n + 1), написал просто (a_n). Не понимаю,как работает этот +1
+#    print(item)
 
