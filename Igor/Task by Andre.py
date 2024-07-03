@@ -116,3 +116,11 @@
 # for item in range (a_1, a_n + 1, d): #Я написал сначала самастоятельно, но потом решил проверить. несмотря на то, что моя прогрессия работала, нейросеть сказала, что я допустил ошибку. я не написал (a_n + 1), написал просто (a_n). Не понимаю,как работает этот +1
 #    print(item)
 
+# task_22
+b_1 = int(input('Enter the first term of the progression: '))
+q = int(input('Enter the denominator of progression: '))
+n = int(input('Enter the number of terms of the progression'))
+b_n = b_1 * q ** (n-1) #должно быть в скобках, так как возведение в степень должно быть выполнено до умножения.
+for item in range (b_1, b_n +1, q):
+    print(item)
+
