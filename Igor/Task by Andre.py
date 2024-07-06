@@ -34,11 +34,12 @@
 # print(f'\n{task_8_1}\n{task_8_2}\n{task_8_3}')
 #  ok , but you can improve it , try to use more input in one line , like this input(),input(), input()
 
-task_9_1 = input()
-task_9_2 = input()
-task_9_3 = input()
-print(f'\n{task_9_3}\n{task_9_2}\n{task_9_1}')
+# task_9_1 = input()
+# task_9_2 = input()
+# task_9_3 = input()
+# print(f'\n{task_9_3}\n{task_9_2}\n{task_9_1}')
 #  ok , but the same thing as task 8
+
 
 # task_10 = ('i', 'like', 'python')  # Разобрать еще раз, не понял.
 # first, like, python = task_10
@@ -46,18 +47,22 @@ print(f'\n{task_9_3}\n{task_9_2}\n{task_9_1}')
 # print(f"first = {first} like = {like} python = {python} first element = {task_10[0]}")
 # print(*task_10, sep='***')
 
+
+#  What exactly you do not understand , specify it
+
 # task_11 = input()
 # print("Hello, " + task_11, end='!')
 
-
-
 # task_12_1, task_12_2, task_12_3, task_12_4 = input(), input(), input(), input()
 # print(task_12_2, task_12_3, task_12_4, sep=task_12_1)
+#  Ok
+
 
 # task_13 = int(input())
 # second_number = task_13 + 1
 # third_number = second_number + 1
 # print(f'\n{task_13}\n{second_number}\n{third_number}')
+#  Ok
 
 # task_14 = int(input("Enter first number: "))+int(input("Enter second number: "))+int(input("Enter third number: "))
 # print (task_14)
