@@ -16,24 +16,29 @@
 
 # task_5
 # print('\n \\* \n \\** \n \\*** \n \\**** \n \\***** \n \\****** \n \\*******')
+# Wrong , a little bit , you have one more slash , slash should be there
+
 
 # task_6 = input('What is your name? ')
 # print('Hello! ' + task_6)
+# Nice job
+
 
 # task_7 = input('what is your favorite footbal team? ')
 # print(task_7 + " - champion!")
+#  Ok
 
 # task_8_1 = input()
 # task_8_2 = input()
 # task_8_3 = input()
 # print(f'\n{task_8_1}\n{task_8_2}\n{task_8_3}')
+#  ok , but you can improve it , try to use more input in one line , like this input(),input(), input()
 
-
-# task_9_1 = input()
-# task_9_2 =input()
-# task_9_3 = input()
-# print(f'\n{task_9_3}\n{task_9_2}\n{task_9_1}')
-
+task_9_1 = input()
+task_9_2 = input()
+task_9_3 = input()
+print(f'\n{task_9_3}\n{task_9_2}\n{task_9_1}')
+#  ok , but the same thing as task 8
 
 # task_10 = ('i', 'like', 'python')  # Разобрать еще раз, не понял.
 # first, like, python = task_10
