@@ -64,40 +64,53 @@
 # print(f'\n{task_13}\n{second_number}\n{third_number}')
 #  Ok
 
+
 # task_14 = int(input("Enter first number: "))+int(input("Enter second number: "))+int(input("Enter third number: "))
 # print (task_14)
+#  Pay attention on the spaces , after print
+
 
 # task_15
 # a = int(input())
 # v = a**3
 # s = 6 * a**2
 # print(v, s)
+# Well done
 
-# #task_16
+ # #task_16
 # a = int(input())
 # b = int(input())
 # f = 3 * (a + b)**3 + 275 * b**2 - 127 * a - 41
 # print(f)
+# Well done
 
 # task_17 = int(input("Enter your number:"))
 # print(f'next to the number {task_17} number: {task_17 + 1}\nFor number {task_17} last to the number: {task_17 - 1}') #я сам не понял, почему без "f" он пишет что это str (разобрать)
 # print(f'')
+# Describe it what you did not understand
+
 
 # task_18
-# monitor_value = int(input())
-# system_block_value = int(input())
-# keyboard_value = int(input())
-# mouse_value = int(input())
-# total_value = (monitor_value + system_block_value + keyboard_value + mouse_value) * 3
-# print(total_value)
+monitor_value = int(input())
+system_block_value = int(input())
+keyboard_value = int(input())
+mouse_value = int(input())
+total_value = (monitor_value + system_block_value + keyboard_value + mouse_value) * 3
+print(total_value)
+# It is ok , but you can doi it more shortly for instance  print((int(input()) + int(input()) + int(input()) + int(
+# input())) * 3)
+
 
 # task 19
-# first = int(input())
-# second = int(input())
-# amount = first + second
-# difference = first - second
-# multiplication = first * second
-# print(f'{amount}\n{difference}\n{multiplication}')
+first = int(input())
+second = int(input())
+amount = first + second
+difference = first - second
+multiplication = first * second
+print(f'{amount}\n{difference}\n{multiplication}')
+#  A little bit long solution , you can do it better , a,b = int(input()),int(input())
+# print(f'{a} + {b} = {a+b}', f'{a} - {b} = {a-b}', f'{a} * {b} = {a*b}', sep='\n')
+
 
 # task_23
 # centimeter = int(input())
