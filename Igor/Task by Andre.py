@@ -1,13 +1,18 @@
 # task_2
 # print( ('Hello, world !'))
 
-# task_3
+
+#  Task 2 Ok
+
+# # task_3
 # print('4 8 15 16 23 42')
+#  Task 3 , Ok
 
 
 # task_4
 # task_4 = '\n4 \n8 \n15 \n16 \n23 \n42 \n8 \n15 \n16 \n23 \n42'
 # print(task_4)
+#  It is ok
 
 # task_5
 # print('\n \\* \n \\** \n \\*** \n \\**** \n \\***** \n \\****** \n \\*******')
