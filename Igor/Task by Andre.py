@@ -197,7 +197,6 @@
 #     print('Yes')
 # else:print('No')
 
-
 #task_38
 # age = int(input())
 # if age >= 18:
