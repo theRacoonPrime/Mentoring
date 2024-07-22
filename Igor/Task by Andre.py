@@ -203,4 +203,86 @@
 #     print('Access allowed')
 # else: print('Access denied')
 
-##START k;p-
+# task_38_2
+# n = 4
+# for i in range(1, n + 1):
+#     print("*" * i)
+
+#task_39
+# for i in range(1, 11):
+# square = i * i
+# cube = i ** 3
+# print(f'{i} {square} {cube}')
+
+#task_40 - ХУЙНЯ,ПОНЯТЬ КАК ДЕЛАТЬ.
+
+#task_41
+# apple, banana, cherry = 0.50, 0.30, 0.20
+# print(f'Item Price: \napple ${apple} \nbanana ${banana} \ncherry ${cherry} \nTotal {apple + banana + cherry} ')
+
+#task_43
+# print(f'{'Celsius':<15} {'Fahrenheit':<15}') #Пример того, как писать в два столбика.
+# for i in range(0,110,10):
+#     j = i * 1.8 + 32
+#     print(f'{i:<15} {j:<15}') # ":<15" - указывает, что имя должно быть выровнено по левому краю и занимать 15 символов ширины. Если имя короче 15 символов, оставшееся пространство будет заполнено пробелами.
+#task_44 - ЕЩЕ ОДНА ЕБАННАЯ ХУЙНЯ
+
+#task_45
+# names = ["Alice", "Bob", "Charlie", "Diana"]
+# for name in names:
+#     print(f'{name:<10}') #тоже форматирование
+
+#task_46
+# text = "hello world hello" #Строка, в которой мы будем считать количество вхождений слова "hello".
+# count = text.count('hello') #Метод count подсчитывает количество вхождений подстроки "hello" в строке text.
+# print(print(f"'hello' appears {count} times in the text.") #Используем форматированную строку (f-string) для вывода результата
+
+#task_47 #Как создавать календарь
+# year, month = 2024, 7
+# print(calendar.month(year, month))
+
+#task_48
+# name =input('Please tell me your name: ')
+# print(f'Nice to meet you: {name}, Let is be friends?!')
+
+#task_49
+# print('Please enter two numbers: ')
+# first, second = int(input('First: ')), int(input('Second: '))
+#print(first + second)
+
+# task_50
+# age = int(input('Please enter your age: '))
+# print(f"you'll be 100 years old in: {100 - age}")
+
+# task_51
+# colour = input("What's your favourite colour")
+# print(f'The colour: {color} - is a good colour')
+
+# task_52
+# proposal = input()
+# print(len(proposal))
+
+# task_53
+# while True:
+#     num1, num2, operator = float(input()), float(input()), input()
+#     if operator == '+':
+#         plus = num1 + num2
+#         print(f'Your answer: {plus}')
+#     elif operator == '-':
+#         minus = num1 - num2
+#         print(f'Your answer: {minus}')
+#     elif operator == '*':
+#         multiply = num1 * num2
+#         print(f'Your answer: {multiply}')
+#     elif operator == '/':
+#         if num2 == 0:
+#             print("Idiot! It's not divisible by 0")
+#         else:
+#             division = num1 / num2
+#             print(f'Your answer: {division}')
+#     else:
+#         print("Wrong operator:")
+#     again = input('Do you want to perform another calculation? (yes/no): ')
+#     if again == 'no':
+#         break
+##START. check 22/07/24
