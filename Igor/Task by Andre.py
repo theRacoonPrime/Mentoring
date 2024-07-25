@@ -305,8 +305,8 @@
 #    if len(qwerty) <=10:
 #        print("Error, password must contain at least 10 characters ")
 #        continue
-#    digits = sum(c.isdigit() for c in qwerty)
-#    letters = sum(c.isalpha() for c in qwerty)
+#    digits = sum(c.isdigit() for c in qwerty) #РАЗОБРАТЬСЯ
+#    letters = sum(c.isalpha() for c in qwerty) #РАЗОБРАТЬСЯ
 #    if digits < 7:
 #        print('Error, password must have at least 7 digits')
 #        continue
@@ -318,18 +318,29 @@
 
 #task_57
 # while True:
-#     num = int(input('Please enter number: '))
-#     if num < 0:
-#         print('Your number is negative.')
-#     elif num == 0:
-#         print('Your number is zero.')
-#     else:
-#         print('Your number is positive ')
-#     again = input('Do you want to continue? ')
-#     if again == 'yes':
-#         continue
-#     else:
-#         break
+#    num = int(input('Please enter number: '))
+#    if num < 0:
+#        print('Your number is negative.')
+#    elif num == 0:
+#        print('Your number is zero.')
+#    else:
+#        print('Your number is positive ')
+#    again = input('Do you want to continue? (yes/no):  ').strip().lower() #strip = удаляет пробелы, lower = переводит все в нижний регистр(Независимио от того, в каком регистре будет написано)
+#    if again == 'yes':
+#        continue
+#    else:
+#        break
+
+# #task_58
+# age = int(input('Please enter your age:'))
+# if age == 0 or age <= 12:
+#     print("Congratulations! You're still a baby")
+# elif age >= 13 and age <= 19:
+#     print("How's school going? ‘Son.’?")
+# elif age >= 20 and age <= 59:
+#     print('Adult living is a hard thing')
+# else:
+#     print('Old age is no joy')
 
 
 
