@@ -299,6 +299,7 @@
 #     print('Password accepted')
 #     break
 #OR
+# print('Attention! Your password must consist of 7 digits, 3 letters of any case, and a minimum of 10 characters.')
 # while True:
 #    qwerty = input('Please enter your password: ')
 #    if len(qwerty) <=10:
@@ -314,6 +315,26 @@
 #        continue
 #    print('Password accepted')
 #    break
+
+#task_57
+# while True:
+#     num = int(input('Please enter number: '))
+#     if num < 0:
+#         print('Your number is negative.')
+#     elif num == 0:
+#         print('Your number is zero.')
+#     else:
+#         print('Your number is positive ')
+#     again = input('Do you want to continue? ')
+#     if again == 'yes':
+#         continue
+#     else:
+#         break
+
+
+
+
+
 
 
 
