@@ -286,3 +286,34 @@
 #     if again == 'no':
 #         break
 ##START. check 22/07/24
+
+# #task_56
+# print('Attention! Your password must consist of 7 digits, 3 letters of any case, and a minimum of 10 characters.')
+# while True:
+#     qwerty = input('Please enter your password: ')
+#     digits = sum(c.isdigit() for c in qwerty)
+#     letters = sum(c.isalpha() for c in qwerty)
+#     if len(qwerty) < 10 and digits < 7 and letters < 3:
+#         print('Input error! Try again!')
+#         continue
+#     print('Password accepted')
+#     break
+#OR
+# while True:
+#    qwerty = input('Please enter your password: ')
+#    if len(qwerty) <=10:
+#        print("Error, password must contain at least 10 characters ")
+#        continue
+#    digits = sum(c.isdigit() for c in qwerty)
+#    letters = sum(c.isalpha() for c in qwerty)
+#    if digits < 7:
+#        print('Error, password must have at least 7 digits')
+#        continue
+#    if letters < 3:
+#        print('Error, password must have at least 3 letters')
+#        continue
+#    print('Password accepted')
+#    break
+
+
+
