@@ -353,6 +353,16 @@
 #         print('Incorrect estimate.Try again')
 #         continue
 
+# task_60
+# num = int(input('Please enter a number: '))
+# if num % 2 == 0 and num % 3 == 0:
+#     print('Your number is divisible by two and three')
+# elif num % 2 == 0:
+#     print('Your number is divisible by two')
+# elif num % 3 == 0:
+#     print('Your number is divisible by three')
+# else:
+#     print('Your number is not divisible by 2 and 3')
 
 
 
