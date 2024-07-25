@@ -331,7 +331,7 @@
 #    else:
 #        break
 
-# #task_58
+# task_58
 # age = int(input('Please enter your age:'))
 # if age == 0 or age <= 12:
 #     print("Congratulations! You're still a baby")
@@ -341,6 +341,20 @@
 #     print('Adult living is a hard thing')
 # else:
 #     print('Old age is no joy')
+
+# task_59
+# while True:
+#     assessment = input('Enter a grade: ').lower()
+#     if assessment in ['a', 'b', 'c', 'd']:
+#         assessment_up = assessment.upper()
+#         print(f'Your grade: {assessment_up}')
+#         break
+#     else:
+#         print('Incorrect estimate.Try again')
+#         continue
+
+
+
 
 
 
