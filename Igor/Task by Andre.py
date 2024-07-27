@@ -45,31 +45,33 @@
 
 # task_12_1, task_12_2, task_12_3, task_12_4 = input(), input(), input(), input()
 # print(task_12_2, task_12_3, task_12_4, sep=task_12_1)
+# Ok
 
 # task_13 = int(input())
 # second_number = task_13 + 1
 # third_number = second_number + 1
 # print(f'\n{task_13}\n{second_number}\n{third_number}')
-
+#  OK
 # task_14 = int(input("Enter first number: "))+int(input("Enter second number: "))+int(input("Enter third number: "))
 # print(task_14)
-
+# Ok
 # task_15
-# a = int(input())
-# v = a**3
-# s = 6 * a**2
-# print(v, s)
+a = int(input())
+v = a**3
+s = 6 * a**2
+print(v, s)
+# great job
 
-# #task_16
+# # #task_16
 # a = int(input())
 # b = int(input())
 # f = 3 * (a + b)**3 + 275 * b**2 - 127 * a - 41
 # print(f)
-
+# great , nice job
 # task_17 = int(input("Enter your number:"))
 # print(f'next to the number {task_17} number: {task_17 + 1}\nFor number {task_17} last to the number: {task_17 - 1}')
 # print(f'')
-
+# nice
 # task_18
 # monitor_value = int(input())
 # system_block_value = int(input())
