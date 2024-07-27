@@ -1,36 +1,47 @@
 # task_2
 # print('Hello, world !')
-
+#  OK
 # task_3
 # print('4 8 15 16 23 42')
+# OK
 
 # task_4
 # task_4 = '\n4 \n8 \n15 \n16 \n23 \n42 \n8 \n15 \n16 \n23 \n42'
 # print(task_4)
+# ok
 
 # task_5
 # print('\n \\* \n \\** \n \\*** \n \\**** \n \\***** \n \\****** \n \\*******')
+# Wrong , one more slash
+# print('\n * \n ** \n *** \n **** \n ***** \n ****** \n ********')
+#  How it`s should be
 
 # task_6 = input('What is your name? ')
 # print('Hello! ' + task_6)
+#  Well done
 
 # task_7 = input('what is your favorite footbal team? ')
-# print(task_7 + " - champion!")
+# # print(task_7 + " - champion!")
+# ok
+
 
 # task_8_1, task_8_2, task_8_3 = input(), input(), input()
 # print(f'\n{task_8_1}\n{task_8_2}\n{task_8_3}')
+# Nice
 
-# task_9_1, task_9_2, task_9_3  = input(), input(), input()
+# task_9_1, task_9_2, task_9_3 = input(), input(), input()
 # print(f'\n{task_9_3}\n{task_9_2}\n{task_9_1}')
+# It`s ok , but there was one more space before equal character
 
 # task_10 = ('i', 'like', 'python')
 # first, like, python = task_10
 # print(task_10[::2])
 # print(f"first = {first} like = {like} python = {python} first element = {task_10[0]}")
 # print(*task_10, sep='***')
-
+# I do not understand what you try to do ? Why do you have to more prints here ?
 # task_11 = input()
 # print("Hello, " + task_11, end='!')
+#  Ok
 
 # task_12_1, task_12_2, task_12_3, task_12_4 = input(), input(), input(), input()
 # print(task_12_2, task_12_3, task_12_4, sep=task_12_1)
