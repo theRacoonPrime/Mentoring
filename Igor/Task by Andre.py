@@ -395,7 +395,20 @@
 #     else:
 #         print('Your number does not belong to the interval')
 #         continue
+#OR
+# num = int(input())
+# if 0 < num <= 100:
+#     print('Your number belongs to the interval')
+# else:
+#     print('Your number does not belong to the interval')
 
+
+#task_63
+# num = int(input())
+# if -30 <= num < -7 or 7 < num <= 25:
+#     print('Your number belongs to the interval')
+# else:
+#     print('Your number does not belong to the interval')
 
 
 
