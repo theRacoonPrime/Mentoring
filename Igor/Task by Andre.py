@@ -417,6 +417,19 @@
 # else:
 #     print('Your number does not belong to the interval')
 
+#task_65
+# while True:
+#    num_4 = (input('Please enter a four digit number: '))
+#    if len(num_4) == 4 and num_4.isdigit():#len = проверяет кол-во символов. .isdigit() = состоит тоько из чисел
+#        num_4 = int(num_4) #сразу преобразует строку в число
+#        if num_4 % 77 == 0 or num_4 % 1717 == 0: # % = остаток от деления. % возвращает 0б если число делится нацело.
+#            print('YES')
+#            break
+#        else:print('NO')
+#        continue
+#    else:print('Error! Please enter a four-digit number')
+#    continue
+
 
 
 
