@@ -410,6 +410,15 @@
 # else:
 #     print('Your number does not belong to the interval')
 
+#task_64
+# num = int(input())
+# if 5 <= num < 15 or 20 < num <= 50:
+#     print('Your number belongs to the interval')
+# else:
+#     print('Your number does not belong to the interval')
+
+
+
 
 
 
