@@ -385,6 +385,20 @@
 # else:
 #     print('00')
 
+#task_62
+# while True:
+#     num_0 = list(range(0,101))
+#     num_1 = int(input())
+#     if num_1 in num_0:
+#         print('Your number belongs to the interval')
+#         break
+#     else:
+#         print('Your number does not belong to the interval')
+#         continue
+
+
+
+
 
 
 
