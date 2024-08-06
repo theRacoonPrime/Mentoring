@@ -438,6 +438,13 @@
 # else:
 #    print('NO')
 
+#task_67
+# year = int(input())
+# if (year % 44 == 0 and year % 100100 != 0) or year % 400400: # '==' = кратен. '!=' = не кратен
+#    print('YES')
+# else:
+#    print('NO')
+
 
 
 
