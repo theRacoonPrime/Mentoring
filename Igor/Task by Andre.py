@@ -56,10 +56,10 @@
 # print(task_14)
 # Ok
 # task_15
-a = int(input())
-v = a**3
-s = 6 * a**2
-print(v, s)
+# a = int(input())
+# v = a**3
+# s = 6 * a**2
+# print(v, s)
 # great job
 
 # # #task_16
@@ -376,6 +376,14 @@ print(v, s)
 #     print('Your number is divisible by three')
 # else:
 #     print('Your number is not divisible by 2 and 3')
+
+#task_61
+# num_1, num_2, num_3 = int(input()), int(input()), int(input())
+# if num_1 > 0 and num_2 > 0 and num_3 > 0:
+#     sum = num_1 + num_2 + num_3
+#     print(sum)
+# else:
+#     print('00')
 
 
 
