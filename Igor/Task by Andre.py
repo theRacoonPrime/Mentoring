@@ -427,8 +427,16 @@
 #            break
 #        else:print('NO')
 #        continue
-#    else:print('Error! Please enter a four-digit number')
-#    continue
+#    else:
+#        print('Error! Please enter a four-digit number')
+#        continue
+
+#task_66
+# a, b, c = int(input()), int(input()), int(input())
+# if a + b > c and a + c > b and b + c > a: # длина любой стороны треугольника всегда меньше суммы длин двух его других сторон
+#    print('YES')
+# else:
+#    print('NO')
 
 
 
