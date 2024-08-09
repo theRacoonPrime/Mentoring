@@ -445,7 +445,13 @@
 # else:
 #    print('NO')
 
-
+#task_68 (Я поглядел, как делают другие, такого варианта не нашел. код работает. ладья может ходить по вертикали и горизонтали на 1 клетку. в проивном случае выдет 'NO'
+# x_1, y_1, x_2, y_2 = int(input('Enter the initial column number(1 to 8): ')), int(input('Enter the original line number(1 to 8): ')), int(input("Enter the next column number(let's say a move of 1 square): ")), int(input("Enter the following line number(let's say a move of 1 square): "))
+# if 1 <= x_1 <= 8 and 1 <= y_1 <= 8:
+#     if (x_2 == x_1 + 1 or x_2 == x_1 - 1) and (y_2 == x_2) or (y_2 == y_1 + 1 or y_2 == y_1 - 1) and (x_1 == x_2):
+#         print('YES')
+#     else:
+#         print('NO')
 
 
 
