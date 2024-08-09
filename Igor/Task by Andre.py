@@ -461,6 +461,15 @@
 #     else:
 #         print('NO')
 
+#task_70
+# num_1 = int(input('Enter the zoom speed: '))
+# num_2 = int(input('Enter the flash speed: '))
+# if num_1 > num_2:
+#     print('NO')
+# elif num_2 > num_1:
+#     print('YES')
+# else:
+#     print("Don't know")
 
 
 
