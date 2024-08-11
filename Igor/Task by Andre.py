@@ -471,6 +471,41 @@
 # else:
 #     print("Don't know")
 
+#task_71
+# a, b, c = int(input()), int(input()), int(input())
+# if a == b or b ==c or c == a:
+#     print('Your triangle is isosceles')
+# elif a == 60 and b == 60 and c == 60:
+#     print('Your triangle is equilateral')
+# elif a != b and b != c and c != a:
+#     print('Your triangle is scalene')
+
+#task_72
+# num_1, num_2,num_3 = int(input()), int(input()), int(input())
+# num_4 = sorted([num_1, num_2, num_3])
+# print(num_4[1])
+
+#task_73
+# month = int(input())
+# if month in (1, 3, 5, 7, 8, 10, 12):
+#     print('31')
+# elif month in (4, 6, 9, 11):
+#     print('30')
+# elif month == 2:
+#     print('28')
+
+#task_74
+# weight = int(input())
+# if 0 < weight < 60: print('Light weight')
+# elif 60 <= weight < 64: print('Light welterweight')
+# elif 64 <= weight < 69: print('Welterweight')
+# else:
+#     print('Error')
+
+#task_75 УЖЕ ПИСАЛ КАЛЬКУЛЯТОР
+
+#task_76
+
 
 
 
