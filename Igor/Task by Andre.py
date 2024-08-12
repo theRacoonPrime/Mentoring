@@ -505,6 +505,20 @@
 #task_75 УЖЕ ПИСАЛ КАЛЬКУЛЯТОР
 
 #task_76
+# a, b = input('please enter colour: yellow, red or blue: '), input('please enter colour: yellow, red or blue: ')
+# color = ['yellow', 'red', 'blue' ]
+# if a != color and b != color:
+#     print('one of the lines is not the right colour!')
+# elif a == 'blue' and b == 'red' or b == 'blue' and a == 'red':
+#     print('you got a purple colour')
+# elif a == 'red' and b == 'yellow' or a =='yellow' and b == 'red':
+#     print('you got the colour orange')
+# elif a == 'blue' and b == 'yellow' or a == 'yellow' and b == 'blue':
+#     print('you got the colour green')
+# elif a == b:
+#     print(a)
+
+
 
 
 
