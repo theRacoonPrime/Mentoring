@@ -518,6 +518,19 @@
 # elif a == b:
 #     print(a)
 
+#task_77 (Хороший пример)
+# num = int(input('Try your luck! Enter a number: '))
+# if num == 0:
+#     print('green')
+# elif 1 <= num <= 36:
+#     if (num % 2 == 0 and 1 <= num <= 10) or (num % 2 == 1 and 11 <= num <= 18) or (num % 2 == 0 and 29 <= num <= 36):
+#         print('black')
+#     else:
+#         print('red')
+# else:
+#     print('input error')
+
+
 
 
 
