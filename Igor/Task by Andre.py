@@ -551,8 +551,15 @@
 # sex, age = input('Who are you today(m or f)? '), int(input('How old are you: '))
 # print('Yes' if sex == 'f' and 10 <= age <= 15 else 'No')
 
-
-
+# #task_82 (Начал изучать словари)
+# num = int(input())
+# rim_num = {1: 'I', 2: 'II', 3: 'III',4: 'IV',
+#            5: 'V', 6: 'VI', 7: 'VII', 8: 'VIII',
+#            9: 'IX', 10: 'X'}
+# if 1 <= num <= 10:
+#     print(rim_num[num])
+# else:
+#     print('Error')
 
 
 
