@@ -547,7 +547,12 @@
 # else:
 #    print('NO')
 
-
+#task_81
+# sex, age = input('Who are you today(m or f)? '), int(input('How old are you:'))
+# if sex == 'f' and 10 <= age <= 15:
+#     print('Yes')
+# else:
+#     print('No')
 
 
 
