@@ -551,7 +551,7 @@
 # sex, age = input('Who are you today(m or f)? '), int(input('How old are you: '))
 # print('Yes' if sex == 'f' and 10 <= age <= 15 else 'No')
 
-# #task_82 (Начал изучать словари)
+# task_82 (Начал изучать словари)
 # num = int(input())
 # rim_num = {1: 'I', 2: 'II', 3: 'III',4: 'IV',
 #            5: 'V', 6: 'VI', 7: 'VII', 8: 'VIII',
@@ -561,6 +561,14 @@
 # else:
 #     print('Error')
 
+# Task_83
+# num = int(input())
+# if num % 2 == 1:
+#     print('YES')
+# elif 22 <= num <= 55 and num % 2 == 0 or num > 2020 and num % 2 == 0:
+#     print("NO")
+# elif 66 <= num <= 2020 and num % 2 == 0:
+#     print('YES')
 
 
 
