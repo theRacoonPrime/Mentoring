@@ -530,10 +530,15 @@
 # else:
 #     print('input error')
 
-
-
-
-
+#task_79
+year = input('Enter the year: ')
+if year.isdigit() and len(year) == 3 or len(year) == 4:
+   if year[-2:] == '00':
+       print('YES')
+   else:
+       print('NO')
+else:
+    print('Error, try again!')
 
 
 
