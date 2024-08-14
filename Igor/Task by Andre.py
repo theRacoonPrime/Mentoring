@@ -531,14 +531,24 @@
 #     print('input error')
 
 #task_79
-year = input('Enter the year: ')
-if year.isdigit() and len(year) == 3 or len(year) == 4:
-   if year[-2:] == '00':
-       print('YES')
-   else:
-       print('NO')
-else:
-    print('Error, try again!')
+# year = input('Enter the year: ')
+# if year.isdigit() and len(year) == 3 or len(year) == 4:
+#    if year[-2:] == '00':
+#        print('YES')
+#    else:
+#        print('NO')
+# else:
+#     print('Error, try again!')
+
+#task_80
+# x_1, x_2, y_1, y_2 = int(input()), int(input()), int(input()), int(input())
+# if (x_1 + x_2) % 2 == 0 and (y_1 + y_2) % 2 == 0: #черный клетки всегда нечетные (нечетное + нечетное = четное). белые клетки всегда четные (четное + четное= четное). таким образом, если пользователь введет нечетное и четное(разные клетки), то всегда получится "NO"
+#    print('YES')
+# else:
+#    print('NO')
+
+
+
 
 
 
