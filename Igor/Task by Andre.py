@@ -581,7 +581,10 @@
 # ans = s // v_12 #время встречи
 # print(f' {ans} hours')
 
-
+# task_89
+# Tf = float(input('enter temperature: '))
+# Tc = 5/9 * (Tf - 32)
+# print(f'{Tc} in degrees Celsius')
 
 
 
