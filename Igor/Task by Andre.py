@@ -570,7 +570,10 @@
 # elif 66 <= num <= 2020 and num % 2 == 0:
 #     print('YES')
 
-
+# task_87
+# a, b = float(input('write 1 length of the cathetus: ')), float(input('write 2 length of the cathetus: '))
+# s = 0.5 * a * b
+# print(s)
 
 
 
