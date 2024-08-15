@@ -586,6 +586,16 @@
 # Tc = 5/9 * (Tf - 32)
 # print(f'{Tc} in degrees Celsius')
 
+#task_90
+# age = int(input('How old is your dog? '))
+# if age <= 2:
+#     ans = age * 10.5
+#     print(ans)
+# elif age > 2:
+#     ans = ((age-2) * 4) + 21
+#     print(ans)
+
+
 
 
 
