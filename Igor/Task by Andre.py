@@ -586,7 +586,7 @@
 # Tc = 5/9 * (Tf - 32)
 # print(f'{Tc} in degrees Celsius')
 
-#task_90
+# task_90
 # age = int(input('How old is your dog? '))
 # if age <= 2:
 #     ans = age * 10.5
@@ -594,6 +594,13 @@
 # elif age > 2:
 #     ans = ((age-2) * 4) + 21
 #     print(ans)
+
+# task_91
+# num = float(input('Enter a number: '))
+# num_2 = int(num *10) % 10
+# print(num_2)
+
+
 
 
 
