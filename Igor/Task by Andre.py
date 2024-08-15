@@ -575,6 +575,12 @@
 # s = 0.5 * a * b
 # print(s)
 
+# task_88
+# s, v_1, v_2 = float(input('enter a distance between them: ')), float(input('enter the speed of the first old lady: ')), float(input('enter the speed of the second old lady: '))
+# v_12 = v_1 + v_2 #Скорость сближения
+# ans = s // v_12 #время встречи
+# print(f' {ans} hours')
+
 
 
 
