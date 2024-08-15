@@ -611,6 +611,11 @@
 # least = sorted(total_sum)
 # print(f'smallest number: {least[0]}\nlargest number: {least[-1]} ')
 
+# task_94
+# num_1, num_2, num_3 = int(input()), int(input()), int(input())
+# total_num = (num_1, num_2, num_3)
+# least = sorted(total_num, reverse=True)
+# print(f'{least[0]}\n{least[1]}\n{least[2]}') #либо: for num in least/print(num)
 
 
 
