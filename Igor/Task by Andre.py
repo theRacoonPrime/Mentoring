@@ -597,10 +597,13 @@
 
 # task_91
 # num = float(input('Enter a number: '))
-# num_2 = int(num *10) % 10
+# num_2 = int(num * 10) % 10
 # print(num_2)
 
-
+# task_92
+# num = float(input('Enter a number: '))
+# num_2 = num - int(num)
+# print(num_2)
 
 
 
