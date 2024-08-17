@@ -617,7 +617,21 @@
 # least = sorted(total_num, reverse=True)
 # print(f'{least[0]}\n{least[1]}\n{least[2]}') #либо: for num in least/print(num)
 
-
+# task_95
+# while True:
+#     num = (input('Enter a three-digit number(or exit for quit): '))
+#     if num.lower() == 'exit':
+#         break
+#     if num.isdigit() and len(num) == 3:
+#         least = sorted(num)
+#         if int(least[2]) - int(least[0]) == int(least[1]):
+#             print('The number is interesting')
+#             continue
+#         else:
+#             print("The number isn't interesting")
+#             continue
+#     else:
+#         print('Idiot? It says three digits!')
 
 
 
