@@ -633,6 +633,13 @@
 #     else:
 #         print('Idiot? It says three digits!')
 
+# task_96
+# num_1, num_2, num_3, num_4, num_5 = float(input()), float(input()), float(input()), float(input()), float(input())
+# numbers = [num_1, num_2, num_3, num_4,num_5]
+# sam = 0 #sam = 0 для последующего накопления ссумы модулей
+# for num in numbers:
+#    sam += abs(num) #abs = убирает знаки, всегда использует '+'. если я ввожу -2.5 он вернут 2.5 (тем самым он убирает знак -, и дает высчитать сумму, а не разнсть.
+# print(sam)
 
 
 
