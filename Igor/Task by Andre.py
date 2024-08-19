@@ -641,6 +641,12 @@
 #    sam += abs(num) #abs = убирает знаки, всегда использует '+'. если я ввожу -2.5 он вернут 2.5 (тем самым он убирает знак -, и дает высчитать сумму, а не разнсть.
 # print(sam)
 
+# task_97
+# print('enter coordinates: ')
+# p_1, p_2,q_1, q_2 = int(input()), int(input()), int(input()), int(input())
+# man = abs(p_1 - q_1) + abs(p_2 - q_2)
+# print('Manhetian distance', man)
+
 
 
 
