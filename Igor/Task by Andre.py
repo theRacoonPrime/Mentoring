@@ -98,7 +98,7 @@
 # students = int(input())
 # result_1 = mandarins / student
 # result_2 = mandarins % student
-# print (a, b, sep='\n'
+# print (a, b, sep='\n')
 
 #task_25
 # n = int(input())
@@ -227,8 +227,6 @@
 # cube = i ** 3
 # print(f'{i} {square} {cube}')
 
-#task_40 - ХУЙНЯ,ПОНЯТЬ КАК ДЕЛАТЬ.
-
 #task_41
 # apple, banana, cherry = 0.50, 0.30, 0.20
 # print(f'Item Price: \napple ${apple} \nbanana ${banana} \ncherry ${cherry} \nTotal {apple + banana + cherry} ')
@@ -238,7 +236,7 @@
 # for i in range(0,110,10):
 #     j = i * 1.8 + 32
 #     print(f'{i:<15} {j:<15}') # ":<15" - указывает, что имя должно быть выровнено по левому краю и занимать 15 символов ширины. Если имя короче 15 символов, оставшееся пространство будет заполнено пробелами.
-#task_44 - ЕЩЕ ОДНА ЕБАННАЯ ХУЙНЯ
+
 
 #task_45
 # names = ["Alice", "Bob", "Charlie", "Diana"]
@@ -657,6 +655,18 @@
 #    next_num = fib[-1] + fib[-2] # "fib[-1]" = последний элемент списка fib, "fib[-2]" = предпоследний.
 #    fib.append(next_num) # "append" добавляет в "fib" в конец списка элементы из 'next_num'(Добовляет слудющие числа из цикла)
 # print(fib)
+
+# task_42 # Я ЕБАЛ...
+# n = 5
+# for i in range(n):
+#     star = '*' * (2 * i + 1)
+#     space = ' ' * (n - i - 1)
+#     print(space + star)
+# for i in range(n - 1, 0, -1):
+#     space = ' ' * (n - i)
+#     star = '*' * (2 * i - 1)
+#     print(space + star)
+
 
 
 
