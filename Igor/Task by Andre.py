@@ -687,6 +687,12 @@
 # for i in reversed(range(1,11)):
 #     print(i)
 
+# task_102
+# num = [3, 7, 1, 12, 9]
+# a = 0
+# for i in num:
+#     a += i
+# print(a)
 
 
 
