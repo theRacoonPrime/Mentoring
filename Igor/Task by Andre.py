@@ -656,7 +656,7 @@
 #    fib.append(next_num) # "append" добавляет в "fib" в конец списка элементы из 'next_num'(Добовляет слудющие числа из цикла)
 # print(fib)
 
-# task_42 # Я ЕБАЛ...
+# task_42 # Я ЕБАЛ... РАЗОБРАТЬ
 # n = 5
 # for i in range(n):
 #     star = '*' * (2 * i + 1)
@@ -671,12 +671,17 @@
 # for i in range(11):
 #     print(i)
 
-# task_99
+# task_99 РАЗОБРАТЬ
 # num = int(input())
 # a = 1
 # for i in range(1, num + 1):
 #     a *= i
 # print(a)
+
+# task_100
+# for i in range(1,21):
+#     if i % 2 == 0:
+#         print(i)
 
 
 
