@@ -683,6 +683,13 @@
 #     if i % 2 == 0:
 #         print(i)
 
+# task_101
+# for i in reversed(range(1,11)):
+#     print(i)
+
+
+
+
 
 
 
