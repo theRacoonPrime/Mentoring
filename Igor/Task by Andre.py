@@ -668,8 +668,17 @@
 #     print(space + star)
 
 # task_98
-for i in range(11):
-    print(i)
+# for i in range(11):
+#     print(i)
+
+# task_99
+# num = int(input())
+# a = 1
+# for i in range(1, num + 1):
+#     a *= i
+# print(a)
+
+
 
 
 
