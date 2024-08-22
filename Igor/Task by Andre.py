@@ -667,6 +667,9 @@
 #     star = '*' * (2 * i - 1)
 #     print(space + star)
 
+# task_98
+for i in range(11):
+    print(i)
 
 
 
