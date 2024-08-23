@@ -701,6 +701,12 @@
 #    counter += 1
 # print(counter)
 
+# task_104
+# num = int(input())
+# for i in range(1,10):
+#     print(f'{num} X {i} = {num * i}')
+
+
 
 
 
