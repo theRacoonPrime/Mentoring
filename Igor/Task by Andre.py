@@ -694,6 +694,12 @@
 #     a += i
 # print(a)
 
+# task_103
+# txt = input()
+# counter = 0
+# for i in txt:
+#    counter += 1
+# print(counter)
 
 
 
