@@ -714,11 +714,17 @@
 #         zero = num
 # print(zero)
 
-#task_107
+# task_107
 # sam = sum(i**2 for i in range(0,51))
 # print(sam)
 
-#task_106
+# task_106
+# fib = [0,1]
+# n = int(input())
+# for i in range(n - 2):
+#     next_num = fib[-1] + fib[-2]
+#     fib.append(next_num)
+# print(fib)
 
 
 
