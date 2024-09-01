@@ -756,7 +756,13 @@
 #         count_2 += 1
 # print(f'vowels: {count_1}\nconsonants: {count_2}')
 
+#task_111
 
+# nums = [3, 7, 1, 12, 9, 4, 8]
+# result = []
+# for i in range(1, len(nums), 2): #len(numbers) возвращает количество элементов в списке numbers, которое в данном случае равно 7/ от 1 до 7 с промежутком 2
+#    result.append(nums[i])
+# print(sum(result))
 
 
 
