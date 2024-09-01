@@ -742,6 +742,19 @@
 #       if is_prime: # Вывод числа, если оно простое:
 #           print(num)
 
+# task_110
+# words = input()
+# words_lover = words.lower()
+# count_1 = 0
+# count_2 = 0
+# vowels = set('aeiou')
+# consonants = set('bcdfghjklmnpqrstvwxz')
+# for letter in words_lover:
+#     if letter in vowels:
+#         count_1 += 1
+#     elif letter in consonants:
+#         count_2 += 1
+# print(f'vowels: {count_1}\nconsonants: {count_2}')
 
 
 
