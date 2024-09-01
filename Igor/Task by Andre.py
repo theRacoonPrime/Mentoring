@@ -726,6 +726,11 @@
 #     fib.append(next_num)
 # print(fib)
 
+# task_108
+# for i in range(0, 101):
+#    if i % 15 == 0: #15 = наименьшее общее кратное
+#        print(i)
+
 
 
 
