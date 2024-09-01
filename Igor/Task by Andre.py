@@ -714,9 +714,11 @@
 #         zero = num
 # print(zero)
 
-#task_106
+#task_107
 # sam = sum(i**2 for i in range(0,51))
 # print(sam)
+
+#task_106
 
 
 
