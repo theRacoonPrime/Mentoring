@@ -706,6 +706,13 @@
 # for i in range(1,10):
 #     print(f'{num} X {i} = {num * i}')
 
+# task_105
+# nums = [3, 7, 1, 12, 9]
+# zero = nums[0]
+# for num in nums:
+#     if num > zero:
+#         zero = num
+# print(zero)
 
 
 
