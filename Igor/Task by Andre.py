@@ -778,6 +778,16 @@
 #     numbers.insert(0, numbers.pop()) # Метод pop() удаляет и возвращает последний элемент списка. В данном случае это число 5. После выполнения этой операции список становится [1, 2, 3, 4]/Метод insert(0, ...) вставляет элемент на место с индексом 0, то есть в начало списка
 # print(numbers)
 
+# task_114
+# S = int(input("Введите значение S: "))
+# fib = [0, 1]
+# total_sum = sum(fib)
+# while total_sum <= S:
+#     next_num = fib[-1] + fib[-2]
+#     fib.append(next_num)
+#     total_sum += next_num
+# print(fib)
+# print(total_sum)
 
 
 
