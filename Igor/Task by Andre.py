@@ -764,6 +764,13 @@
 #    result.append(nums[i])
 # print(sum(result))
 
+#task_112
+
+# num_1 = [1, 2]
+# num_2 = [3, 4]
+# result = [x * y for x in num_1 for y in num_2]
+# print(result)
+
 
 
 
