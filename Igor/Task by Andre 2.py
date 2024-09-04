@@ -46,3 +46,31 @@
 #        return info
 #book = Book('1984', 'George Orwell', 328)
 #print(book.pull_info())
+
+#task_120
+
+# class Calculator:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+#     def add(self):
+#         """two additions"""
+#         return self.a + self.b
+#
+#     def subtract(self):
+#         """subtraction"""
+#         return self.a - self.b
+#
+#     def multiply(self):
+#         """Multiplication"""
+#         return self.a * self.b
+#
+#     def divide(self,):
+#        if self.b == 0:
+#            print('Error: Division by zero is not allowed.')
+#            return None
+#        return  self.a / self.b
+#
+# calc = Calculator(10,5)
+#
+# print(f'Addition: {calc.add()}\nSubtraction: {calc.subtract()}\nMultiplication: {calc.multiply()}\nDivision: {calc.divide()}')
