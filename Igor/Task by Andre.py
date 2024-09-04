@@ -802,4 +802,13 @@
 # int_num = [int(float(num_1)) for num_1 in num]
 # print(sum(int_num))
 
+# task_78
+# a_1, b_1, a_2, b_2 = int(input()), int(input()), int(input()), int(input()),
+# left = max(a_1, a_2) # наибольший элемент
+# right = min(b_1, b_2) # наименьший элемент
+# if left <= right:
+#    print(f'section: {left} {right}')
+# else:
+#    print('empty set')
+
 
