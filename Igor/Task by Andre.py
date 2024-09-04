@@ -796,6 +796,10 @@
 # else:
 #     print('-')
 
+# task_55
 
+# num = input('Enter the numbers separated by space: ').split() #.split():  разбивает введенную строку на список отдельных строк (каждое число будет отдельным элементом).
+# int_num = [int(float(num_1)) for num_1 in num]
+# print(sum(int_num))
 
 
