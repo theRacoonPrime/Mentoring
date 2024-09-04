@@ -31,3 +31,18 @@
 # student = Student('Igor', [5, 5, 5, 3, 2, 2, 4, 5, 3])
 #
 # print(f'Student Name: {student.name}\n Average grade: {student.mean()}')
+
+#task_119
+
+# class Book:
+#    def __init__(self, name, autor, page):
+#        self.name = name
+#        self.autor = autor
+#        self.page = page
+#
+#    def pull_info(self):
+#        """full book details"""
+#        info = (f'Title: {self.name}\nAuthor: {self.autor}\nPages: {self.page}')
+#        return info
+#book = Book('1984', 'George Orwell', 328)
+#print(book.pull_info())
