@@ -98,7 +98,7 @@
 # students = int(input())
 # result_1 = mandarins / student
 # result_2 = mandarins % student
-# print (a, b, sep='\n'
+# print (a, b, sep='\n')
 
 #task_25
 # n = int(input())
@@ -227,8 +227,6 @@
 # cube = i ** 3
 # print(f'{i} {square} {cube}')
 
-#task_40 - ХУЙНЯ,ПОНЯТЬ КАК ДЕЛАТЬ.
-
 #task_41
 # apple, banana, cherry = 0.50, 0.30, 0.20
 # print(f'Item Price: \napple ${apple} \nbanana ${banana} \ncherry ${cherry} \nTotal {apple + banana + cherry} ')
@@ -238,7 +236,7 @@
 # for i in range(0,110,10):
 #     j = i * 1.8 + 32
 #     print(f'{i:<15} {j:<15}') # ":<15" - указывает, что имя должно быть выровнено по левому краю и занимать 15 символов ширины. Если имя короче 15 символов, оставшееся пространство будет заполнено пробелами.
-#task_44 - ЕЩЕ ОДНА ЕБАННАЯ ХУЙНЯ
+
 
 #task_45
 # names = ["Alice", "Bob", "Charlie", "Diana"]
@@ -570,16 +568,247 @@
 # elif 66 <= num <= 2020 and num % 2 == 0:
 #     print('YES')
 
+# task_87
+# a, b = float(input('write 1 length of the cathetus: ')), float(input('write 2 length of the cathetus: '))
+# s = 0.5 * a * b
+# print(s)
 
+# task_88
+# s, v_1, v_2 = float(input('enter a distance between them: ')), float(input('enter the speed of the first old lady: ')), float(input('enter the speed of the second old lady: '))
+# v_12 = v_1 + v_2 #Скорость сближения
+# ans = s // v_12 #время встречи
+# print(f' {ans} hours')
 
+# task_89
+# Tf = float(input('enter temperature: '))
+# Tc = 5/9 * (Tf - 32)
+# print(f'{Tc} in degrees Celsius')
 
+# task_90
+# age = int(input('How old is your dog? '))
+# if age <= 2:
+#     ans = age * 10.5
+#     print(ans)
+# elif age > 2:
+#     ans = ((age-2) * 4) + 21
+#     print(ans)
 
+# task_91
+# num = float(input('Enter a number: '))
+# num_2 = int(num * 10) % 10
+# print(num_2)
 
+# task_92
+# num = float(input('Enter a number: '))
+# num_2 = num - int(num)
+# print(num_2)
 
+# task_93
+# num_1, num_2, num_3, num_4, num_5 = int(input()), int(input()), int(input()), int(input()), int(input())
+# total_sum = (num_1, num_2, num_3, num_4, num_5)
+# least = sorted(total_sum)
+# print(f'smallest number: {least[0]}\nlargest number: {least[-1]} ')
 
+# task_94
+# num_1, num_2, num_3 = int(input()), int(input()), int(input())
+# total_num = (num_1, num_2, num_3)
+# least = sorted(total_num, reverse=True)
+# print(f'{least[0]}\n{least[1]}\n{least[2]}') #либо: for num in least/print(num)
 
+# task_95
+# while True:
+#     num = (input('Enter a three-digit number(or exit for quit): '))
+#     if num.lower() == 'exit':
+#         break
+#     if num.isdigit() and len(num) == 3:
+#         least = sorted(num)
+#         if int(least[2]) - int(least[0]) == int(least[1]):
+#             print('The number is interesting')
+#             continue
+#         else:
+#             print("The number isn't interesting")
+#             continue
+#     else:
+#         print('Idiot? It says three digits!')
 
+# task_96
+# num_1, num_2, num_3, num_4, num_5 = float(input()), float(input()), float(input()), float(input()), float(input())
+# numbers = [num_1, num_2, num_3, num_4,num_5]
+# sam = 0 #sam = 0 для последующего накопления ссумы модулей
+# for num in numbers:
+#    sam += abs(num) #abs = убирает знаки, всегда использует '+'. если я ввожу -2.5 он вернут 2.5 (тем самым он убирает знак -, и дает высчитать сумму, а не разнсть.
+# print(sam)
 
+# task_97
+# print('enter coordinates: ')
+# p_1, p_2,q_1, q_2 = int(input()), int(input()), int(input()), int(input())
+# man = abs(p_1 - q_1) + abs(p_2 - q_2)
+# print('Manhetian distance', man)
 
+#ПРОШЫЕ ТАСКИ, КОТОРЫЕ СОТАВИЛ НА ПОТОМ
+# task_40
+
+# num_1 = [0]
+# num_2 = [1]
+# fib = num_1 + num_2
+# for _ in range(8): # при помощи переменной "_" мы показываем, что она не будет использоваться внутри цикла.
+#    next_num = fib[-1] + fib[-2] # "fib[-1]" = последний элемент списка fib, "fib[-2]" = предпоследний.
+#    fib.append(next_num) # "append" добавляет в "fib" в конец списка элементы из 'next_num'(Добовляет слудющие числа из цикла)
+# print(fib)
+
+# task_42 # Я ЕБАЛ... РАЗОБРАТЬ
+# n = 5
+# for i in range(n):
+#     star = '*' * (2 * i + 1)
+#     space = ' ' * (n - i - 1)
+#     print(space + star)
+# for i in range(n - 1, 0, -1):
+#     space = ' ' * (n - i)
+#     star = '*' * (2 * i - 1)
+#     print(space + star)
+
+# task_98
+# for i in range(11):
+#     print(i)
+
+# task_99 РАЗОБРАТЬ
+# num = int(input())
+# a = 1
+# for i in range(1, num + 1):
+#     a *= i
+# print(a)
+
+# task_100
+# for i in range(1,21):
+#     if i % 2 == 0:
+#         print(i)
+
+# task_101
+# for i in reversed(range(1,11)):
+#     print(i)
+
+# task_102
+# num = [3, 7, 1, 12, 9]
+# a = 0
+# for i in num:
+#     a += i
+# print(a)
+
+# task_103
+# txt = input()
+# counter = 0
+# for i in txt:
+#    counter += 1
+# print(counter)
+
+# task_104
+# num = int(input())
+# for i in range(1,10):
+#     print(f'{num} X {i} = {num * i}')
+
+# task_105
+# nums = [3, 7, 1, 12, 9]
+# zero = nums[0]
+# for num in nums:
+#     if num > zero:
+#         zero = num
+# print(zero)
+
+# task_107
+# sam = sum(i**2 for i in range(0,51))
+# print(sam)
+
+# task_106
+# fib = [0,1]
+# n = int(input())
+# for i in range(n - 2):
+#     next_num = fib[-1] + fib[-2]
+#     fib.append(next_num)
+# print(fib)
+
+# task_108
+# for i in range(0, 101):
+#    if i % 15 == 0: #15 = наименьшее общее кратное
+#        print(i)
+
+# task_109, 44(там просто до 50, но тоже задание)
+# for num in range(1,101): #НЕ ПОНЯЛ
+#   if num > 1: # исключаем 1 т.к он не является простым числом по опредлению
+#       is_prime = True # т,к мы исключили 1 из проверки, предпологаем, что остальные числа являются простыми, создаем переменную, и говорим, мол правда
+#       for i in range(2, int(num * 0.5) + 1): # от 2 т.к мы уже исключили 1. int(num**0.5) + 1 вычисляет целую часть квадратного корня из num и увеличивает её на 1. Это нужно для того, чтобы проверить все возможные делители до квадратного корня.
+#           if num % i == 0: # Проверка, делится ли число num на i:
+#               is_prime = False # Если найден делитель, число num
+#               break # прерывает внутренний цикл
+#       if is_prime: # Вывод числа, если оно простое:
+#           print(num)
+
+# task_110
+# words = input()
+# words_lover = words.lower()
+# count_1 = 0
+# count_2 = 0
+# vowels = set('aeiou')
+# consonants = set('bcdfghjklmnpqrstvwxz')
+# for letter in words_lover:
+#     if letter in vowels:
+#         count_1 += 1
+#     elif letter in consonants:
+#         count_2 += 1
+# print(f'vowels: {count_1}\nconsonants: {count_2}')
+
+#task_111
+
+# nums = [3, 7, 1, 12, 9, 4, 8]
+# result = []
+# for i in range(1, len(nums), 2): #len(numbers) возвращает количество элементов в списке numbers, которое в данном случае равно 7/ от 1 до 7 с промежутком 2
+#    result.append(nums[i])
+# print(sum(result))
+
+#task_112
+
+# num_1 = [1, 2]
+# num_2 = [3, 4]
+# result = [x * y for x in num_1 for y in num_2]
+# print(result)
+
+# task_113
+# numbers = [1, 2, 3, 4, 5]
+# shift = 1
+# for i in range(shift): # значение shift определяет, сколько раз нужно сдвинуть элементы вправо
+#     numbers.insert(0, numbers.pop()) # Метод pop() удаляет и возвращает последний элемент списка. В данном случае это число 5. После выполнения этой операции список становится [1, 2, 3, 4]/Метод insert(0, ...) вставляет элемент на место с индексом 0, то есть в начало списка
+# print(numbers)
+
+# task_114
+# S = int(input("Введите значение S: "))
+# fib = [0, 1]
+# total_sum = sum(fib)
+# while total_sum <= S:
+#     next_num = fib[-1] + fib[-2]
+#     fib.append(next_num)
+#     total_sum += next_num
+# print(fib)
+# print(total_sum)
+
+# task_54
+# sentence = input("Enter a sentence: ").lower().replace(" ", "")
+# if sentence == sentence[::-1]:
+#     print('+')
+# else:
+#     print('-')
+
+# task_55
+
+# num = input('Enter the numbers separated by space: ').split() #.split():  разбивает введенную строку на список отдельных строк (каждое число будет отдельным элементом).
+# int_num = [int(float(num_1)) for num_1 in num]
+# print(sum(int_num))
+
+# task_78
+# a_1, b_1, a_2, b_2 = int(input()), int(input()), int(input()), int(input()),
+# left = max(a_1, a_2) # наибольший элемент
+# right = min(b_1, b_2) # наименьший элемент
+# if left <= right:
+#    print(f'section: {left} {right}')
+# else:
+#    print('empty set')
 
 
