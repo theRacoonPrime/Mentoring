@@ -76,14 +76,34 @@
 # print(f'Addition: {calc.add()}\nSubtraction: {calc.subtract()}\nMultiplication: {calc.multiply()}\nDivision: {calc.divide()}')
 
 # Task_121
-class Cat:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+#
+# class Cat:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     def hello(self):
+#         print(f'Hello, my host! My name is {self.name}. i am {self.age} years old')
+#
+# cat = Cat('Bushy', 9)
+#
+# cat.hello()
 
-    def hello(self):
-        print(f'Hello, my host! My name is {self.name}. i am {self.age} years old')
+# Task_122
 
-cat = Cat('Bushy', 9)
-
-cat.hello()
+# class BankAccount:
+#     def __init__(self, account, balance):
+#         self.account = account
+#         self.balance = balance
+#     def deposit(self):
+#         interest = self.balance * 0.05
+#         total = self.balance + interest
+#         return total
+#     def withdraw(self):
+#         return self.balance
+#
+# bankaccount = BankAccount(9876543210, 250000)
+#
+# print(f'Your information: \nAccount Number: {bankaccount.account}\nBalance: {bankaccount.balance}')
+# print(f'Deposit account (balance with interest): {bankaccount.deposit()}')
+# print(f'Withdrawal money: {bankaccount.withdraw()}')
