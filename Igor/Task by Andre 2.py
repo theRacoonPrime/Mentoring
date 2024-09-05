@@ -74,3 +74,16 @@
 # calc = Calculator(10,5)
 #
 # print(f'Addition: {calc.add()}\nSubtraction: {calc.subtract()}\nMultiplication: {calc.multiply()}\nDivision: {calc.divide()}')
+
+# Task_121
+class Cat:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def hello(self):
+        print(f'Hello, my host! My name is {self.name}. i am {self.age} years old')
+
+cat = Cat('Bushy', 9)
+
+cat.hello()
