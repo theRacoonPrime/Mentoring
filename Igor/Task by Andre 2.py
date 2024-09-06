@@ -107,3 +107,18 @@
 # print(f'Your information: \nAccount Number: {bankaccount.account}\nBalance: {bankaccount.balance}')
 # print(f'Deposit account (balance with interest): {bankaccount.deposit()}')
 # print(f'Withdrawal money: {bankaccount.withdraw()}')
+
+# # Task_123
+# class Car:
+#     def __init__(self, mark, model, year):
+#         self.mark = mark
+#         self.model = model
+#         self.year = year
+#     def info(self):
+#         """General information about car"""
+#         print(f'Car make: {self.mark}\nMachine model: {self.model}\nMachine year: {self.year}')
+#
+# car = Car('Ram Trucks', 'Pickup', 2020 )
+#
+# car.info()
+
