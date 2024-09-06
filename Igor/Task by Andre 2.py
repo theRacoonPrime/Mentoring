@@ -47,7 +47,7 @@
 #book = Book('1984', 'George Orwell', 328)
 #print(book.pull_info())
 
-#task_120
+# task_120
 
 # class Calculator:
 #     def __init__(self, a, b):
@@ -108,7 +108,7 @@
 # print(f'Deposit account (balance with interest): {bankaccount.deposit()}')
 # print(f'Withdrawal money: {bankaccount.withdraw()}')
 
-# # Task_123
+#  Task_123
 # class Car:
 #     def __init__(self, mark, model, year):
 #         self.mark = mark
@@ -122,3 +122,19 @@
 #
 # car.info()
 
+# Task_124
+
+# class Rectangle:
+#     def __init__(self, height, width):
+#         self.height = height
+#         self.width = width
+#     def perimetr(self):
+#         """method for calculating the perimeter of a triangle"""
+#         return 2 * (self.height + self.width)
+#     def area(self):
+#         """method for calculating the area of a triangle"""
+#         return self.height * self.width
+#
+# rectangle = Rectangle(5, 10)
+#
+# print(f'Perimeter is {rectangle.perimetr()}\nArea is: {rectangle.area()} ')
