@@ -138,3 +138,21 @@
 # rectangle = Rectangle(5, 10)
 #
 # print(f'Perimeter is {rectangle.perimetr()}\nArea is: {rectangle.area()} ')
+
+# Task_125
+
+# class Employee:
+#     def __init__(self, name, position, salary):
+#         self.name = name
+#         self.position = position
+#         self.salary = salary
+#
+#     def upsurge(self):
+#         percent = self.salary * 0.15
+#         result = self.salary + percent
+#         return result
+#
+# employee = Employee('igor', 'IT specialist', 50000)
+#
+# print(f'congratulations {employee.name},\nyou are doing very good work as a {employee.position}.\nYour new salary: {employee.upsurge()}  ')
+
