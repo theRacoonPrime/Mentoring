@@ -148,11 +148,48 @@
 #         self.salary = salary
 #
 #     def upsurge(self):
+#
 #         percent = self.salary * 0.15
 #         result = self.salary + percent
 #         return result
 #
 # employee = Employee('igor', 'IT specialist', 50000)
 #
-# print(f'congratulations {employee.name},\nyou are doing very good work as a {employee.position}.\nYour new salary: {employee.upsurge()}  ')
+# print(f'Congratulations {employee.name}!\nYou are doing very good work as a {employee.position}.\nYour new salary: {employee.upsurge()}')
+
+# Task_126
+
+class Book:
+    def __init__(self, name, autor, pages):
+        self.name = name
+        self.autor = autor
+        self.pages = pages
+
+    def pull_info(self):
+        '''Returns complete information about the book'''
+        info = f'Title: {self.name}\nAuthor: {self.autor}\nPages: {self.pages}'
+        return info
+
+class LibraryBook(Book):
+    def __init__(self, name, autor, pages, availability=True):
+        super().__init__(name, autor, pages)
+        self.availability = availability
+
+    def change_availability(self, status):
+        '''Changes the availability status of the book'''
+        self.availability = status
+
+    def availability_status(self,):
+        '''Returns the current availability status of the book'''
+        if self.availability:
+            return 'Available in the library'
+        else:
+            return 'Checked out'
+
+library_book = LibraryBook('1984', 'George Orwell', 328)
+
+print(f'{library_book.pull_info()}\nStatus: {library_book.availability_status()}')
+
+library_book.change_availability(False)
+print(f'status: {library_book.availability_status()}')
 
