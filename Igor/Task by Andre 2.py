@@ -193,6 +193,8 @@
 # library_book.change_availability(False)
 # print(f'status: {library_book.availability_status()}')
 
+# Task_127
+
 # class Person:
 #     def __init__(self, name, age):
 #         self.name, self.age = name, age
@@ -243,6 +245,61 @@
 # student2.enroll(course)
 #
 # print(course.get_info())
+
+#Task_128
+# class BankAccount:
+#     def __init__(self,account, balance=0, withdrawals_limit=1000):
+#         self.account, self.balance,self.withdrawals_limit = account, balance, withdrawals_limit
+#
+#     def deposit(self, amount):
+#         '''Method for depositing funds into the account'''
+#         if amount > 0:
+#             self.balance + amount
+#             print(f'Successfully deposite {amount}. Current balance: {self.balance} ')
+#         else:
+#             print('Deposit amount must be positive')
+#
+#     def withdraw(self,amount):
+#         '''Method for withdrawal of funds subject to limit'''
+#         if amount > self.withdrawals_limit:
+#             print(f'Error: Exceeds withdrawal limit of {self.withdrawals_limit}')
+#         elif amount > self.balance:
+#             print(f'Error: Insufficient balance. Current balance: {self.balance}')
+#         elif amount > 0:
+#             self.balance -= amount
+#             print(f'Successfully withdrew: {amount}. Remaining balance: {self.balance}')
+#         else:
+#             print('Withdrawal amount must be positive.')
+#
+#     def get_balance(self):
+#         return self.balance
+#
+# class SavingsAccount(BankAccount):
+#     def __init__(self,account, balance, balance_limit=100):
+#         super().__init__(account, balance)
+#         self.balance_limit = balance_limit
+#
+#     def apply_interest(self):
+#         '''Method for calculating percentage'''
+#         if self.balance < self.balance_limit:
+#             print(f'Error: your balance {self.balance}. under the limit: {self.balance_limit}')
+#         else:
+#             interest = self.balance * 0.15
+#             self.balance += interest
+#             print(f'Your {self.balance} has increased by 15 per cent')
+#
+# saving = SavingsAccount(12345678, 500, 100)
+#
+# saving.deposit(150)
+#
+# saving.apply_interest()
+#
+# low_balance_account = SavingsAccount(12345678, 50, 100)
+# low_balance_account.apply_interest()
+
+
+
+
 
 
 
