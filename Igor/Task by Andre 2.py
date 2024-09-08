@@ -193,3 +193,56 @@
 # library_book.change_availability(False)
 # print(f'status: {library_book.availability_status()}')
 
+# class Person:
+#     def __init__(self, name, age):
+#         self.name, self.age = name, age
+#
+# class Student(Person):
+#     def __init__(self,name, age, student_id):
+#         super().__init__(name, age)
+#         self.student_id, self.courses = student_id, []
+#
+#     def enroll(self,course):
+#         '''Method for enrolling a student in a course'''
+#         self.courses.append(course)
+#         course.add_student(self)
+#
+# class Teacher(Person):
+#     def __init__(self, name, age, subject):
+#         super().__init__(name, age)
+#         self.subject = subject
+#
+# class Course:
+#     def __init__(self, course_name):
+#         self.course_name, self.teacher, self.students = course_name, None, []
+#
+#     def set_teacher(self, teacher):
+#         '''Assigning an instructor to a course'''
+#         self.teacher = teacher
+#
+#     def add_student(self, student):
+#         '''Adding a student to a course'''
+#         self.students.append(student)
+#
+#     def get_info(self):
+#         '''Method for obtaining course information'''
+#         student_names = [student.name for student in self.students]
+#         teacher_name = self.teacher.name if self.teacher else 'No teacher assigned'
+#         return (f'Course: {self.course_name}\nTeacher: {teacher_name}\nStudents enrolled: {", ".join(student_names) if student_names else 'No students enrolled'}')
+#
+# student1 = Student('Andrey', 25, 's1001')
+# student2 = Student ('Edward', 23, 's1002')
+#
+# teacher = Teacher('Dr. Smith', 45, 'Mathematics')
+#
+# course = Course('Algebra')
+#
+# course.set_teacher(teacher)
+#
+# student1.enroll(course)
+# student2.enroll(course)
+#
+# print(course.get_info())
+
+
+
