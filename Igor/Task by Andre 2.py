@@ -297,6 +297,104 @@
 # low_balance_account = SavingsAccount(12345678, 50, 100)
 # low_balance_account.apply_interest()
 
+# Task_129
+#
+# class Room: #представляет комнату в отеле, с атрибутами
+#     def __init__(self, room_type, price_per_night):
+#         self.room_type = room_type #тип комнаты
+#         self.price_per_night = price_per_night #цена за ночь
+#         self.is_available = True #Логическое значение, доступна комната или нет. По умолчанию True.
+#
+#     def set_is_available(self, status): #метод для изменения доступности комнаты.
+#         '''Establish the accessibility of the room'''
+#         self.is_available = status #принимает параметр status, который устанавливает значение 'True'
+#
+#
+# class Booking: #отвечает за управление бронированиями
+#     def __init__(self, room, num_of_nights):
+#         if room.is_available: #Проверяется, доступна ли комната для бронирования через условие
+#             self.room = room #room: ссылка на объект комнаты,
+#             self.num_of_nights = num_of_nights #num_of_nights: количество ночей
+#             self.total_price = self.calculate_total_price() #total_price: общая стоимость бронирования (рассчитывается с помощью метода calculate_total_price
+#             self.is_active = True #is_active: указывает, активно ли бронирование (если бронирование активно, то его нельзя отменить).
+#             room.set_is_available(False) #Если комната доступна, она бронируется на заданное количество ночей, и её доступность меняется на False через вызов метода room.set_is_available(False).
+#         else:
+#             raise ValueError('Room is not available for booking')
+#
+#     def calculate_total_price(self):
+#         '''Method for calculating the total cost of accommodation'''
+#         return self.room.price_per_night * self.num_of_nights
+#
+#     def cancel(self):
+#         self.is_active = False #Устанавливает статус бронирования как неактивное
+#         self.room.set_is_available(True) #Освобождает комнату, делая её доступной для других бронирований через вызов метода
+#
+#     def get_details(self): #этот метод возвращает строку с подробностями о бронировании
+#         '''Method for obtaining booking details'''
+#         return (f'Room type: {self.room.room_type}\nPrice per night: {self.room.price_per_night}\nNights: {self.num_of_nights}\nTotal cost: {self.total_price}')
+#
+#
+# class Hotel: # управляет всеми комнатами и бронированиями в отеле.
+#     def __init__(self, name):
+#         self.name = name #название отеля.
+#         self.rooms = [] #список всех комнат в отеле (список объектов Room)
+#         self.bookings = [] # список всех активных бронирований (список объектов Booking).
+#
+#     def add_room(self, room):
+#         self.rooms.append(room) #добавляет объект комнаты в список rooms
+#
+#     def find_available_room(self, room_type):
+#         for room in self.rooms: #проходит по списку всех комнат
+#             if room.room_type == room_type and room.is_available: #проверяет, доступна ли комната и соответствует ли её тип заданному
+#                 return room
+#         return None
+#
+#     def make_booking(self, room_type, num_of_nights): #метод для создания бронирования
+#         room = self.find_available_room(room_type) #Cначала ищет доступную комнату нужного типа через вызов
+#         if room:
+#             booking = Booking(room, num_of_nights) #Eсли комната найдена, создаёт объект Booking
+#             self.bookings.append(booking)#добавляет его в список бронирований self.bookings
+#             print(f'Booking successful! Room type: {room_type}, Nights: {num_of_nights}, Total price: {booking.total_price}')
+#             return booking
+#         else:
+#             print(f"No available rooms of type {room_type}") #Если комната не найдена, выводится сообщение о том, что комнаты такого типа нет
+#             return None
+#
+#     def cancel_booking(self, booking):
+#         if booking in self.bookings and booking.is_active: #находится ли бронирование в списке активных бронирований и не отменено ли оно уже
+#             booking.cancel()#бронирование отменяется
+#             self.bookings.remove(booking) #оно удаляется из списка.
+#             print('Booking cancelled successfully.')
+#         else:
+#             print('Booking not found or already cancelled.')
+#
+#     def show_available_rooms(self):# метод, который выводит все доступные комнаты
+#         available_rooms = [room for room in self.rooms if room.is_available]
+#         if available_rooms:
+#             for room in available_rooms: #те, у которых is_available == True)
+#                 print(f"Room type: {room.room_type}, Price per night: {room.price_per_night}")
+#         else:
+#             print('No available rooms') #сли таких комнат нет, выводится сообщение, что доступных комнат нет.
+#
+# hotel = Hotel('Grand Hotel')
+#
+# room1 = Room('Single', 100)
+# room2 = Room('Double', 150)
+# room3 = Room('Suite', 300)
+#
+# hotel.add_room(room1)
+# hotel.add_room(room2)
+# hotel.add_room(room3)
+#
+# hotel.show_available_rooms()
+#
+# booking1 = hotel.make_booking('Double', 3)
+#
+# booking2 = hotel.make_booking('Double', 2)
+#
+# hotel.cancel_booking(booking1)
+#
+# hotel.show_available_rooms()
 
 
 
