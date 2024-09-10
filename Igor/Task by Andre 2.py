@@ -472,6 +472,76 @@
 #
 # restaurant.show_orders()
 
+# Task_131
+
+# class Vehicle:
+#     """base class for all vehicles."""
+#     def __init__(self, max_speed,num_seats):
+#         self.max_speed, self.num_seats = max_speed, num_seats
+#
+#     def vehicle_info(self):
+#         """'Outputs vehicle information"""
+#         print(f'Max speed: {self.max_speed} km/h\nSeats: {self.num_seats}')
+#
+# class Car(Vehicle):
+#     def __init__(self, max_speed, num_seats,engine_on=False):
+#         super().__init__(max_speed,num_seats)
+#         self.engine_on = engine_on
+#
+#     def on_off(self):
+#         if self.engine_on:
+#             print('engine running')
+#         else:
+#             print('engine shut down')
+#
+# class Bicycle(Vehicle):
+#     def __init__(self,max_speed, num_seats, transmissions=0):
+#         super().__init__(max_speed, num_seats)
+#         self.transmissions = transmissions
+#
+#     def switching(self, new_gear):
+#         if 0 < new_gear <= 8:
+#             self.transmissions = new_gear
+#             print(f'Gear switched to {self.transmissions}')
+#         else:
+#             print('Incorrect transmission')
+#
+# class Airplane(Vehicle):
+#     def __init__(self,max_speed, num_seats, flap_type=0):
+#         super().__init__(max_speed, num_seats)
+#         self.flap_type = flap_type
+#
+#     def flap_operation(self):
+#         if self.flap_type == 1:
+#             print('altitude gain')
+#         elif self.flap_type == 2:
+#             print('take-off')
+#         elif self.flap_type == 3:
+#             print('approach')
+#         elif self.flap_type == 4:
+#             print('braking')
+#         else:
+#             print('mistake! We are going down!')
+#
+# car = Car(200, 3, False)
+# car.vehicle_info()
+# car.on_off()
+# car.engine_on = True
+# car.on_off()
+# print('\n')
+#
+# bike = Bicycle(30, 1,0)
+# print('Bisycle information')
+# bike.switching(3)
+# bike.switching(9)
+# print('\n')
+#
+# plan = Airplane(900, 150,2)
+# plan.vehicle_info()
+# plan.flap_operation()
+# plan.flap_type = 4
+# plan.flap_operation()
+
 
 
 
