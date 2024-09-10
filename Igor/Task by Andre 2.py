@@ -396,6 +396,82 @@
 #
 # hotel.show_available_rooms()
 
+# Task_130
+
+# class Dish:
+#     '''representing the dish and the price'''
+#     def __init__(self, name, price):
+#         self.name, self.price = name, price
+#
+# class Order:
+#     ''' ability to add dishes and calculate the total cost.'''
+#     def __init__(self):
+#         self.dishes = [] #  Список для хранения объектов Dish
+#
+#
+#     def add_dish(self, dish):
+#         """Adds a dish"""
+#         self.dishes.append(dish)
+#
+#     def calculate_total_price(self):
+#         """Calculates the total cost of the order"""
+#         total_price = sum(dish.price for dish in self.dishes) #dish.price - хранит цену конкретного блюдаю. self.dishes -  содержит все добавленные блюда (объекты класса Dish). Цикл проходит по каждому объекту Dish в списке self.dishes. На каждой итерации dish представляет собой объект блюда из заказа.
+#         return total_price
+#
+#     def info(self):
+#         """'''Displays information about the order'''"""
+#         if self.dishes: # есть ли блюда в списке.
+#             print('Your order')
+#             for dish in self.dishes:
+#                 print(f'- {dish.name}: {dish.price}')
+#             print(f'Total cost: {self.calculate_total_price()}')
+#         else:
+#             print('No dishes in the order')
+#
+#     def pay(self):
+#         """Simulates the payment process"""
+#         total_price = self.calculate_total_price()
+#         print(f'Order has been paid. Total: {total_price}')
+#         self.dishes = []
+#
+# class Restaurant:
+#     def __init__(self):
+#         self.orders = [] # список заказов
+#
+#     def add_order(self, order):
+#         """Adds an order to the restaurant"""
+#         self.orders.append(order)
+#
+#     def show_orders(self):
+#         """Displays all orders"""
+#         if self.orders:
+#             for i, order in enumerate(self.orders, 1):
+#                 print(f'\nOrder {i}')
+#                 order.info() # # Вызываем метод info() для каждого заказа
+#         else:
+#             print('No orders have been made.')
+#
+# dish1 = Dish('Big Mak', 100)
+# dish2 = Dish('Pizza', 250)
+# dish3 = Dish ('salat', 75)
+#
+# order1 = Order()
+# order1.add_dish(dish1)
+# order1.add_dish(dish2)
+#
+# order2 = Order()
+# order2.add_dish(dish3)
+#
+# restaurant = Restaurant()
+# restaurant.add_order(order1)
+# restaurant.add_order(order2)
+#
+# restaurant.show_orders()
+#
+# order1.pay()
+#
+# restaurant.show_orders()
+
 
 
 
