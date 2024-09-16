@@ -542,6 +542,43 @@
 # plan.flap_type = 4
 # plan.flap_operation()
 
+#task_132
+
+# import random
+
+# def get_user_choice():
+#    user_choice = input('Choose: Rock, Scissors, Paper.').lower()
+#    if user_choice not in ['rock', 'scissors', 'paper']:
+#        print('wrong choice')
+#        return get_user_choice()
+#    return user_choice
+
+# def get_computer_choice():
+#    choices = ['rock', 'scissors', 'paper']
+#    return random.choice(choices)
+
+# def winner(user_choice, computer_choice):
+#    if user_choice == computer_choice:
+#        return 'Tie!'
+
+#    if (user_choice == 'rock' and computer_choice == 'scissors') or \
+#            (user_choice == 'scissors' and computer_choice == 'paper' ) or \
+#            (user_choice == 'paper' and computer_choice == 'rock'):
+#        return "You win"
+#    else:
+#        return 'You lost'
+
+# def play_game():
+#    user_choice = get_user_choice()
+#    computer_choice = get_computer_choice()
+
+#    print(f'Your choice: {user_choice.capitalize()}')
+#    print(f'computer choice: {computer_choice.capitalize()}')
+
+#    result = winner(user_choice, computer_choice)
+#    print(result)
+
+# play_game()
 
 
 
