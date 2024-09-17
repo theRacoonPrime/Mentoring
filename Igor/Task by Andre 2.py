@@ -582,67 +582,67 @@
 
 # Task_133
 
-import random
-
-def computer_choice():
-    return random.randint(1, 10)
-
-def get_user_choice():
-    while True:
-        try:
-            choice = int(input('enter a number between 1 and 10: '))
-            if 1 <= choice <= 10:
-                return choice
-            else:
-                print('enter a number between 1 and 10: ')
-        except ValueError:
-            print('You need to enter a number!')
-
-def play_round(user, computer):
-    computer_num = computer_choice()
-    user_num = get_user_choice()
-
-    print(f'the computer chose a number: {computer_num}')
-
-    if user_num == computer_num:
-        print('That is right, +10 points')
-        user += 10
-        computer -= 5
-    else:
-        print('Wrong, -10 points')
-        user -= 10
-        computer += 5
-
-    return user, computer
-
-def check_winner(user, computer):
-    if user >= 150:
-        print('Congratulations, you won!')
-        return  True
-    elif computer >= 150:
-        print('The computer won. Try again!')
-        return  True
-    return False
-
-def game():
-    user_points = 100
-    computer_points = 100
-
-    print('Welcome to the Numerical Battle game. Your task is to guess the number that the computer has guessed.')
-
-    while True:
-        user_points, computer_points = play_round(user_points, computer_points)
-
-        print(f'Your points: {user_points} | Computer points: {computer_points}')
-
-        if check_winner(user_points, computer_points):
-            break
-
-        if input('Would you like to continue? (yes/no): ').lower() != 'yes':
-            break
-
-
-game()
+# import random
+#
+# def computer_choice():
+#     return random.randint(1, 10)
+#
+# def get_user_choice():
+#     while True:
+#         try:
+#             choice = int(input('enter a number between 1 and 10: '))
+#             if 1 <= choice <= 10:
+#                 return choice
+#             else:
+#                 print('enter a number between 1 and 10: ')
+#         except ValueError:
+#             print('You need to enter a number!')
+#
+# def play_round(user, computer):
+#     computer_num = computer_choice()
+#     user_num = get_user_choice()
+#
+#     print(f'the computer chose a number: {computer_num}')
+#
+#     if user_num == computer_num:
+#         print('That is right, +10 points')
+#         user += 10
+#         computer -= 5
+#     else:
+#         print('Wrong, -10 points')
+#         user -= 10
+#         computer += 5
+#
+#     return user, computer
+#
+# def check_winner(user, computer):
+#     if user >= 150:
+#         print('Congratulations, you won!')
+#         return  True
+#     elif computer >= 150:
+#         print('The computer won. Try again!')
+#         return  True
+#     return False
+#
+# def game():
+#     user_points = 100
+#     computer_points = 100
+#
+#     print('Welcome to the Numerical Battle game. Your task is to guess the number that the computer has guessed.')
+#
+#     while True:
+#         user_points, computer_points = play_round(user_points, computer_points)
+#
+#         print(f'Your points: {user_points} | Computer points: {computer_points}')
+#
+#         if check_winner(user_points, computer_points):
+#             break
+#
+#         if input('Would you like to continue? (yes/no): ').lower() != 'yes':
+#             break
+#
+#
+# game()
 
 
 
