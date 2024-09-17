@@ -644,6 +644,39 @@
 #
 # game()
 
+# Task_133(2)
+# import random
+#
+# computer_points, user_points = 100, 100
+# while computer_points > 0 and user_points > 0 and computer_points < 150 and user_points < 150:
+#     computer_num = random.randint(1,10)
+#     try:
+#         user_num = int(input('enter a number between 1 and 10: '))
+#         if user_num < 1 or user_num > 10:
+#             print('Please enter a valid number between 1 and 10.')
+#             continue
+#     except ValueError:
+#         print('Invalid input. Please enter a number.')
+#         continue
+#     if user_num == computer_num:
+#         user_points += 10
+#         computer_points -= 5
+#         print(f'You won +10 points\nYour points: ({user_points})\nComputer points: ({computer_points})')
+#
+#     else:
+#         user_points -= 10
+#         computer_points += 5
+#         print(f'Computer won: -10 points\nYour points: ({user_points})\nComputer points: ({computer_points})')
+#
+# if computer_points <= 0:
+#     print('Computer lost')
+# elif user_points <= 0:
+#     print('You lost')
+# elif computer_points >= 150:
+#     print('Computer win')
+# elif user_points >= 150:
+#     print("you won")
+
 
 
 
