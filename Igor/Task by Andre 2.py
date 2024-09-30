@@ -693,6 +693,19 @@
 
 # connection.close()
 
+# Task_3
 
-
-
+# import sqlite3 # Подключаем библиотеку
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db' # Создаем переменную, которая содержит путь к файлу, где хранится база данных
+# connection = sqlite3.connect(dp_path) # подключение базы данных по указанному пути
+# cursor = connection.cursor() # создает обьект cursor, этот обьект позволяет выполнить SQL-запросы к базе данных
+#
+# cursor.execute('SELECT CompanyName, ContactName FROM Customers') #Выполнение запроса, выбор определнных стобцов из таблицы
+#
+# customers = cursor.fetchall() # получает все строки, которые были выбраны в результате запроса
+#
+# for customers in customers: # Проходим покаждой записи customers
+#     print(customers)
+#
+# connection.close()
