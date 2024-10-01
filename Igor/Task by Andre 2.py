@@ -743,3 +743,21 @@
 #     print(customers)
 #
 # connection.close()
+
+# Task_6
+
+# import sqlite3
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+#
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+#
+# cursor.execute('SELECT COUNT(*) FROM Customers')
+#
+# customers = cursor.fetchall()
+#
+# for customers in customers:
+#     print(customers)
+#
+# connection.close()
