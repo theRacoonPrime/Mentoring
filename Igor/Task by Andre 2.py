@@ -761,3 +761,27 @@
 #     print(customers)
 #
 # connection.close()
+
+# Task_7
+
+import sqlite3
+
+dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+
+connection = sqlite3.connect(dp_path)
+cursor = connection.cursor()
+
+cursor.execute('SELECT Country FROM Customers GROUP BY Country')
+unique_countries = cursor.fetchall()
+
+print("Unique countries: ")
+for country in unique_countries:
+    print(country[0])
+
+cursor.execute('SELECT Country, COUNT(*) AS CustomerCount FROM Customers GROUP BY Country')
+country_counts = cursor.fetchall()
+
+for country, count in country_counts:
+    print(f'{country}: {count}')
+
+connection.close()
