@@ -802,3 +802,33 @@
 #     print(products)
 #
 # connection.close()
+
+# Task_9
+
+# import sqlite3
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+#
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+#
+# cursor.execute('SELECT * FROM Orders JOIN Customers ON Orders.CustomerID = Customers.CustomerID')
+# result = cursor.fetchall()
+#
+# for i in result:
+#     print(i)
+#
+# connection.close()
+
+# Task_10
+
+# import sqlite3
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+#
+# cursor.execute("INSERT INTO Products (ProductName) VALUES ('Vodka')")
+# connection.commit()
+#
+# connection.close()
