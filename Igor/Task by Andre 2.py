@@ -764,24 +764,41 @@
 
 # Task_7
 
-import sqlite3
+# import sqlite3
 
-dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
 
-connection = sqlite3.connect(dp_path)
-cursor = connection.cursor()
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
 
-cursor.execute('SELECT Country FROM Customers GROUP BY Country')
-unique_countries = cursor.fetchall()
+# cursor.execute('SELECT Country FROM Customers GROUP BY Country')
+# unique_countries = cursor.fetchall()
 
-print("Unique countries: ")
-for country in unique_countries:
-    print(country[0])
+# print("Unique countries: ")
+# for country in unique_countries:
+#    print(country[0])
 
-cursor.execute('SELECT Country, COUNT(*) AS CustomerCount FROM Customers GROUP BY Country')
-country_counts = cursor.fetchall()
+# cursor.execute('SELECT Country, COUNT(*) AS CustomerCount FROM Customers GROUP BY Country')
+# country_counts = cursor.fetchall()
 
-for country, count in country_counts:
-    print(f'{country}: {count}')
+# for country, count in country_counts:
+#    print(f'{country}: {count}')
 
-connection.close()
+# connection.close()
+
+# Task_8
+
+# import sqlite3
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+#
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+#
+# cursor.execute('SELECT MIN(UnitPrice), MAX(UnitPrice), AVG(UnitPrice) FROM Products')
+# products = cursor.fetchall()
+#
+# for products in products:
+#     print(products)
+#
+# connection.close()
