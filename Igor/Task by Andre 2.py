@@ -832,4 +832,17 @@
 # connection.commit()
 #
 # connection.close()
-Check
+
+# Task_11
+
+import sqlite3
+
+dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+connection = sqlite3.connect(dp_path)
+cursor = connection.cursor()
+
+cursor.execute('UPDATE Products SET UnitPrice = UnitPrice * 1.10 WHERE CategoryID = 1')
+
+connection.commit()
+
+connection.close()
