@@ -857,3 +857,22 @@
 #         if num[j] > num[j + 1]:
 #             num[j], num[j + 1] = num[j +1], num[j]
 #             print(num)
+
+# task_118
+# total_sum = 0
+# total_product = 1
+# found_prime = False
+# num_1, num_2 = int(input()), int(input())
+# for i in range(num_1, num_2 + 1):
+#     if i > 1:
+#         is_prime = True
+#         for j in range(2, int(i**0.5) + 1):
+#             if i % j == 0:
+#                 is_prime = False
+#                 break
+#         if is_prime:
+#             found_prime = True
+#             total_sum += i
+#             total_product *= i
+# if found_prime:
+#     print(f'{total_sum}\n{total_product}')
