@@ -847,3 +847,13 @@
 #
 # connection.close()
 
+#STOP WORK WITH SQL, WILL START USUALLY TASK
+
+#Task_117
+
+# num = [int(input()) for _ in range(5)]
+# for i in range(len(num) - 1):
+#     for j in range(len(num) - 1 - i):
+#         if num[j] > num[j + 1]:
+#             num[j], num[j + 1] = num[j +1], num[j]
+#             print(num)
