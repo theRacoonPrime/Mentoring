@@ -915,3 +915,23 @@
 # intersection = set(num_1) & set(num_2) # & (побитовое И)/ Пересечение — это множество, содержащее только те элементы, которые присутствуют в обоих множествах.
 # result = (intersection, plus, minus) #Кортеж
 # print(result)
+
+# Task_122
+
+# num_students = int(input('Enter the number of students: '))
+# students = {}
+#
+# for i in range(num_students):
+#     print(f"\nStudents: {i + 1}:")
+#     name = input("Enter the name of student: ")
+#     age = int(input('Enter the age of student: '))
+#     grades = list(map(int, input("Enter the student's grades through the space: ")))
+#
+#     students[name] = {'Age': age, 'Grades': grades}
+#
+# searh_name = input('Enter the name of student to search:')
+#
+# if searh_name in students:
+#     print(f'Name: {searh_name}\nAge: {students[searh_name]['Age']}\nGrades: {students[searh_name]['Grades']}')
+# else:
+#     print('Student not found')
