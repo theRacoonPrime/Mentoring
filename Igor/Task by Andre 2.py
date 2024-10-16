@@ -890,3 +890,18 @@
 
 #histogram = '\n'.join([f'{char}: {"*" * count}' for char, count in char_count.items()]) #
 #print(histogram)
+
+# Task_120
+# import string
+# text = input("Please, enter the text: ")
+# char_count = {}
+# table = str.maketrans("","",string.punctuation)
+# new_next_low = text.translate(table).lower().split()
+# for char in new_next_low:
+#     if char in char_count:
+#         char_count[char] += 1
+#     else:
+#         char_count[char] = 1
+# sorted_words = sorted(char_count.items(), key=lambda x: x[1], reverse=True)
+# for word, count in sorted_words[:5]:
+#     print(f'{word}: {count}')
