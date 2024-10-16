@@ -876,3 +876,17 @@
 #             total_product *= i
 # if found_prime:
 #     print(f'{total_sum}\n{total_product}')
+
+# task_119
+
+# word = input()
+# char_count = {} #Создается пустой словарь, который будет заполняться по мерере обработки строки
+
+# for char in word:
+#    if char in char_count:
+#        char_count[char] += 1
+#    else:
+#        char_count[char] = 1
+
+#histogram = '\n'.join([f'{char}: {"*" * count}' for char, count in char_count.items()]) #
+#print(histogram)
