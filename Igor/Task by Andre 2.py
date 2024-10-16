@@ -905,3 +905,13 @@
 # sorted_words = sorted(char_count.items(), key=lambda x: x[1], reverse=True)
 # for word, count in sorted_words[:5]:
 #     print(f'{word}: {count}')
+
+# Task_121
+
+# num_1,num_2 = list(map(int, input())), list(map(int, input()))
+# my_set_1, my_set_2 = set(num_1), set(num_2)
+# minus = my_set_1 - my_set_2
+# plus = my_set_1 | my_set_2 # | (побитовое ИЛИ)/ Объединение — это множество, содержащее все уникальные элементы, которые присутствуют хотя бы в одном из двух множеств.
+# intersection = set(num_1) & set(num_2) # & (побитовое И)/ Пересечение — это множество, содержащее только те элементы, которые присутствуют в обоих множествах.
+# result = (intersection, plus, minus) #Кортеж
+# print(result)
