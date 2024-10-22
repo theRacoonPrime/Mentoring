@@ -965,3 +965,13 @@
 # sym_dif = unique_list1.symmetric_difference(unique_list2)
 #
 # print('Symmetric difference:', sym_dif)
+
+# Task_125
+
+# num = int(input('enter the number: '))
+# sum_digits = 0
+# while num > 0:
+#     digit = num % 10
+#     sum_digits += digit
+#     num //= 10
+# print('Sum of the Numbers:', sum_digits)
