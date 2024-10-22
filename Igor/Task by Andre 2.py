@@ -935,3 +935,23 @@
 #     print(f'Name: {searh_name}\nAge: {students[searh_name]['Age']}\nGrades: {students[searh_name]['Grades']}')
 # else:
 #     print('Student not found')
+
+# Task_123
+
+# mylist = []
+# n = int(input('How many elements do you want to add? '))
+# for i in range(n):
+#     element = input(f'Enter an element {i + 1}: ')
+#     low_element = element.lower()
+#     mylist.append(low_element)
+#
+# unigue_elements = set(mylist)
+# slovar = {}
+# for j in mylist:
+#     if j in slovar:
+#         slovar[j] += 1
+#     else:
+#         slovar[j] = 1
+#
+# sorted_slovar = sorted(slovar.items(), key=lambda item: item[1],reverse=True)
+# print(sorted_slovar)
