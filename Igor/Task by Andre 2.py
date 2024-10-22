@@ -955,3 +955,13 @@
 #
 # sorted_slovar = sorted(slovar.items(), key=lambda item: item[1],reverse=True)
 # print(sorted_slovar)
+
+# Task_124
+
+# list1 = input('Enter the items in the first list separated by a space: ').split()
+# list2 = input('Enter the items in the second list separated by a space:').split()
+#
+# unique_list1, unique_list2 = set(map(int, list1)), set(map(int, list2))
+# sym_dif = unique_list1.symmetric_difference(unique_list2)
+#
+# print('Symmetric difference:', sym_dif)
