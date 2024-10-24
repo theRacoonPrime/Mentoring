@@ -999,3 +999,15 @@
 #         print('NO')
 # else:
 #     print('The number must be between 1 and 8')
+
+# Task_86 (ЕБАННЫЙ ФЕРЗЬ)
+# x_1, y_1, x_2, y_2 = int(input('column number: ')), int(input('line number: ')), int(input('column number: ')), int(input('line number: '))
+# if all(1 <= i <= 8 for i in [x_1,x_2,y_1,y_2]):
+#     if x_1 == x_2 or y_1 == y_2:
+#         print('Yes')
+#     elif x_2 - x_1 == y_2 - y_1:
+#         print('Yes')
+#     else:
+#         print('No')
+# else:
+#     print('The number must be between 1 and 8')
