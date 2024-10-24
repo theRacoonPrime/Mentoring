@@ -975,3 +975,16 @@
 #     sum_digits += digit
 #     num //= 10
 # print('Sum of the Numbers:', sum_digits)
+
+# Task_84 (ЕБАННЫЙ СЛОН)
+
+x_1, y_1, x_2, y_2 = int(input('column number: ')), int(input('line number: ')), int(input('column number: ')), int(input('line number: '))
+if 1 <= x_1 <= 8 and 1 <= x_2 <= 8 and 1 <= y_1 <= 8 and 1 <= y_2 <= 8:
+   if x_2 - x_1 == y_2 - y_1:
+       print('Yes')
+   else:
+       print('No')
+else:
+    print('The number must be between 1 and 8')
+
+
