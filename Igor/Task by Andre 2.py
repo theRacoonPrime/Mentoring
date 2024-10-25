@@ -582,69 +582,432 @@
 
 # Task_133
 
-import random
+# import random
+#
+# def computer_choice():
+#     return random.randint(1, 10)
+#
+# def get_user_choice():
+#     while True:
+#         try:
+#             choice = int(input('enter a number between 1 and 10: '))
+#             if 1 <= choice <= 10:
+#                 return choice
+#             else:
+#                 print('enter a number between 1 and 10: ')
+#         except ValueError:
+#             print('You need to enter a number!')
+#
+# def play_round(user, computer):
+#     computer_num = computer_choice()
+#     user_num = get_user_choice()
+#
+#     print(f'the computer chose a number: {computer_num}')
+#
+#     if user_num == computer_num:
+#         print('That is right, +10 points')
+#         user += 10
+#         computer -= 5
+#     else:
+#         print('Wrong, -10 points')
+#         user -= 10
+#         computer += 5
+#
+#     return user, computer
+#
+# def check_winner(user, computer):
+#     if user >= 150:
+#         print('Congratulations, you won!')
+#         return  True
+#     elif computer >= 150:
+#         print('The computer won. Try again!')
+#         return  True
+#     return False
+#
+# def game():
+#     user_points = 100
+#     computer_points = 100
+#
+#     print('Welcome to the Numerical Battle game. Your task is to guess the number that the computer has guessed.')
+#
+#     while True:
+#         user_points, computer_points = play_round(user_points, computer_points)
+#
+#         print(f'Your points: {user_points} | Computer points: {computer_points}')
+#
+#         if check_winner(user_points, computer_points):
+#             break
+#
+#         if input('Would you like to continue? (yes/no): ').lower() != 'yes':
+#             break
+#
+#
+# game()
 
-def computer_choice():
-    return random.randint(1, 10)
+# Task_133(2)
+# import random
+#
+# computer_points, user_points = 100, 100
+# while computer_points > 0 and user_points > 0 and computer_points < 150 and user_points < 150:
+#     computer_num = random.randint(1,10)
+#     try:
+#         user_num = int(input('enter a number between 1 and 10: '))
+#         if user_num < 1 or user_num > 10:
+#             print('Please enter a valid number between 1 and 10.')
+#             continue
+#     except ValueError:
+#         print('Invalid input. Please enter a number.')
+#         continue
+#     if user_num == computer_num:
+#         user_points += 10
+#         computer_points -= 5
+#         print(f'You won +10 points\nYour points: ({user_points})\nComputer points: ({computer_points})')
+#
+#     else:
+#         user_points -= 10
+#         computer_points += 5
+#         print(f'Computer won: -10 points\nYour points: ({user_points})\nComputer points: ({computer_points})')
+#
+# if computer_points <= 0:
+#     print('Computer lost')
+# elif user_points <= 0:
+#     print('You lost')
+# elif computer_points >= 150:
+#     print('Computer win')
+# elif user_points >= 150:
+#     print("you won")
 
-def get_user_choice():
-    while True:
-        try:
-            choice = int(input('enter a number between 1 and 10: '))
-            if 1 <= choice <= 10:
-                return choice
-            else:
-                print('enter a number between 1 and 10: ')
-        except ValueError:
-            print('You need to enter a number!')
+# Start work with SQL(task2)
+# import sqlite3
 
-def play_round(user, computer):
-    computer_num = computer_choice()
-    user_num = get_user_choice()
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
 
-    print(f'the computer chose a number: {computer_num}')
+# cursor.execute('SELECT * FROM Customers')
 
-    if user_num == computer_num:
-        print('That is right, +10 points')
-        user += 10
-        computer -= 5
-    else:
-        print('Wrong, -10 points')
-        user -= 10
-        computer += 5
+# customers = cursor.fetchall()
 
-    return user, computer
+# for customers in customers:
+#    print(customers)
 
-def check_winner(user, computer):
-    if user >= 150:
-        print('Congratulations, you won!')
-        return  True
-    elif computer >= 150:
-        print('The computer won. Try again!')
-        return  True
-    return False
+# connection.close()
 
-def game():
-    user_points = 100
-    computer_points = 100
+# Task_3
 
-    print('Welcome to the Numerical Battle game. Your task is to guess the number that the computer has guessed.')
+# import sqlite3 # Подключаем библиотеку
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db' # Создаем переменную, которая содержит путь к файлу, где хранится база данных
+# connection = sqlite3.connect(dp_path) # подключение базы данных по указанному пути
+# cursor = connection.cursor() # создает обьект cursor, этот обьект позволяет выполнить SQL-запросы к базе данных
+#
+# cursor.execute('SELECT CompanyName, ContactName FROM Customers') #Выполнение запроса, выбор определнных стобцов из таблицы
+#
+# customers = cursor.fetchall() # получает все строки, которые были выбраны в результате запроса
+#
+# for customers in customers: # Проходим покаждой записи customers
+#     print(customers)
+#
+# connection.close()
 
-    while True:
-        user_points, computer_points = play_round(user_points, computer_points)
+#Task_4
 
-        print(f'Your points: {user_points} | Computer points: {computer_points}')
+# import sqlite3
 
-        if check_winner(user_points, computer_points):
-            break
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+#connection = sqlite3.connect(dp_path)
+#cursor = connection.cursor()
 
-        if input('Would you like to continue? (yes/no): ').lower() != 'yes':
-            break
+# cursor.execute("SELECT * FROM Customers WHERE Country = 'Germany'")
 
+# customers = cursor.fetchall()
 
-game()
+# for customers in customers:
+#    print(customers)
 
+#connection.close()
 
+# Task_5
 
+# import sqlite3
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+#
+# cursor.execute('SELECT * FROM Customers ORDER BY CompanyName ASC')
+#
+# customers = cursor.fetchall()
+#
+# for customers in customers:
+#     print(customers)
+#
+# connection.close()
 
+# Task_6
 
+# import sqlite3
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+#
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+#
+# cursor.execute('SELECT COUNT(*) FROM Customers')
+#
+# customers = cursor.fetchall()
+#
+# for customers in customers:
+#     print(customers)
+#
+# connection.close()
+
+# Task_7
+
+# import sqlite3
+
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+
+# cursor.execute('SELECT Country FROM Customers GROUP BY Country')
+# unique_countries = cursor.fetchall()
+
+# print("Unique countries: ")
+# for country in unique_countries:
+#    print(country[0])
+
+# cursor.execute('SELECT Country, COUNT(*) AS CustomerCount FROM Customers GROUP BY Country')
+# country_counts = cursor.fetchall()
+
+# for country, count in country_counts:
+#    print(f'{country}: {count}')
+
+# connection.close()
+
+# Task_8
+
+# import sqlite3
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+#
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+#
+# cursor.execute('SELECT MIN(UnitPrice), MAX(UnitPrice), AVG(UnitPrice) FROM Products')
+# products = cursor.fetchall()
+#
+# for products in products:
+#     print(products)
+#
+# connection.close()
+
+# Task_9
+
+# import sqlite3
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+#
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+#
+# cursor.execute('SELECT * FROM Orders JOIN Customers ON Orders.CustomerID = Customers.CustomerID')
+# result = cursor.fetchall()
+#
+# for i in result:
+#     print(i)
+#
+# connection.close()
+
+# Task_10
+
+# import sqlite3
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+#
+# cursor.execute("INSERT INTO Products (ProductName) VALUES ('Vodka')")
+# connection.commit()
+#
+# connection.close()
+
+# Task_11
+
+# import sqlite3
+#
+# dp_path = r'C:\Users\Игорь\PycharmProjects\KNB\Igor\db\northwind.db'
+# connection = sqlite3.connect(dp_path)
+# cursor = connection.cursor()
+#
+# cursor.execute('UPDATE Products SET UnitPrice = UnitPrice * 1.10 WHERE CategoryID = 1')
+#
+# connection.commit()
+#
+# connection.close()
+
+#STOP WORK WITH SQL, WILL START USUALLY TASK
+
+#Task_117
+
+# num = [int(input()) for _ in range(5)]
+# for i in range(len(num) - 1):
+#     for j in range(len(num) - 1 - i):
+#         if num[j] > num[j + 1]:
+#             num[j], num[j + 1] = num[j +1], num[j]
+#             print(num)
+
+# task_118
+# total_sum = 0
+# total_product = 1
+# found_prime = False
+# num_1, num_2 = int(input()), int(input())
+# for i in range(num_1, num_2 + 1):
+#     if i > 1:
+#         is_prime = True
+#         for j in range(2, int(i**0.5) + 1):
+#             if i % j == 0:
+#                 is_prime = False
+#                 break
+#         if is_prime:
+#             found_prime = True
+#             total_sum += i
+#             total_product *= i
+# if found_prime:
+#     print(f'{total_sum}\n{total_product}')
+
+# task_119
+
+# word = input()
+# char_count = {} #Создается пустой словарь, который будет заполняться по мерере обработки строки
+
+# for char in word:
+#    if char in char_count:
+#        char_count[char] += 1
+#    else:
+#        char_count[char] = 1
+
+#histogram = '\n'.join([f'{char}: {"*" * count}' for char, count in char_count.items()]) #
+#print(histogram)
+
+# Task_120
+# import string
+# text = input("Please, enter the text: ")
+# char_count = {}
+# table = str.maketrans("","",string.punctuation)
+# new_next_low = text.translate(table).lower().split()
+# for char in new_next_low:
+#     if char in char_count:
+#         char_count[char] += 1
+#     else:
+#         char_count[char] = 1
+# sorted_words = sorted(char_count.items(), key=lambda x: x[1], reverse=True)
+# for word, count in sorted_words[:5]:
+#     print(f'{word}: {count}')
+
+# Task_121
+
+# num_1,num_2 = list(map(int, input())), list(map(int, input()))
+# my_set_1, my_set_2 = set(num_1), set(num_2)
+# minus = my_set_1 - my_set_2
+# plus = my_set_1 | my_set_2 # | (побитовое ИЛИ)/ Объединение — это множество, содержащее все уникальные элементы, которые присутствуют хотя бы в одном из двух множеств.
+# intersection = set(num_1) & set(num_2) # & (побитовое И)/ Пересечение — это множество, содержащее только те элементы, которые присутствуют в обоих множествах.
+# result = (intersection, plus, minus) #Кортеж
+# print(result)
+
+# Task_122
+
+# num_students = int(input('Enter the number of students: '))
+# students = {}
+#
+# for i in range(num_students):
+#     print(f"\nStudents: {i + 1}:")
+#     name = input("Enter the name of student: ")
+#     age = int(input('Enter the age of student: '))
+#     grades = list(map(int, input("Enter the student's grades through the space: ")))
+#
+#     students[name] = {'Age': age, 'Grades': grades}
+#
+# searh_name = input('Enter the name of student to search:')
+#
+# if searh_name in students:
+#     print(f'Name: {searh_name}\nAge: {students[searh_name]['Age']}\nGrades: {students[searh_name]['Grades']}')
+# else:
+#     print('Student not found')
+
+# Task_123
+
+# mylist = []
+# n = int(input('How many elements do you want to add? '))
+# for i in range(n):
+#     element = input(f'Enter an element {i + 1}: ')
+#     low_element = element.lower()
+#     mylist.append(low_element)
+#
+# unigue_elements = set(mylist)
+# slovar = {}
+# for j in mylist:
+#     if j in slovar:
+#         slovar[j] += 1
+#     else:
+#         slovar[j] = 1
+#
+# sorted_slovar = sorted(slovar.items(), key=lambda item: item[1],reverse=True)
+# print(sorted_slovar)
+
+# Task_124
+
+# list1 = input('Enter the items in the first list separated by a space: ').split()
+# list2 = input('Enter the items in the second list separated by a space:').split()
+#
+# unique_list1, unique_list2 = set(map(int, list1)), set(map(int, list2))
+# sym_dif = unique_list1.symmetric_difference(unique_list2)
+#
+# print('Symmetric difference:', sym_dif)
+
+# Task_125
+
+# num = int(input('enter the number: '))
+# sum_digits = 0
+# while num > 0:
+#     digit = num % 10
+#     sum_digits += digit
+#     num //= 10
+# print('Sum of the Numbers:', sum_digits)
+
+# Task_84 (ЕБАННЫЙ СЛОН)
+
+# x_1, y_1, x_2, y_2 = int(input('column number: ')), int(input('line number: ')), int(input('column number: ')), int(input('line number: '))
+# if 1 <= x_1 <= 8 and 1 <= x_2 <= 8 and 1 <= y_1 <= 8 and 1 <= y_2 <= 8:
+#    if x_2 - x_1 == y_2 - y_1:
+#        print('Yes')
+#    else:
+#        print('No')
+# else:
+#     print('The number must be between 1 and 8')
+
+# Task_85 85 (ЕБАННЫЙ КОНЬ)
+
+# x_1, y_1, x_2, y_2 = int(input('column number: ')), int(input('line number: ')), int(input('column number: ')), int(input('line number: '))
+# if all(1 <= i <= 8 for i in [x_1,x_2,y_1,y_2]):
+#     if (x_2 == x_1 + 2 or x_2 == x_1 - 2) and (y_2 == y_1 + 1 or y_2 == y_1 - 1):
+#         print('YES')
+#     elif (y_2 == y_1 + 2 or y_2 == y_1 - 2) and (x_2 == x_1 + 1 or x_2 == x_1 - 1):
+#         print('YES')
+#     else:
+#         print('NO')
+# else:
+#     print('The number must be between 1 and 8')
+
+# Task_86 (ЕБАННЫЙ ФЕРЗЬ)
+# x_1, y_1, x_2, y_2 = int(input('column number: ')), int(input('line number: ')), int(input('column number: ')), int(input('line number: '))
+# if all(1 <= i <= 8 for i in [x_1,x_2,y_1,y_2]):
+#     if x_1 == x_2 or y_1 == y_2:
+#         print('Yes')
+#     elif x_2 - x_1 == y_2 - y_1:
+#         print('Yes')
+#     else:
+#         print('No')
+# else:
+#     print('The number must be between 1 and 8')
