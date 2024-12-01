@@ -231,3 +231,4 @@ dmypy.json
 .idea/*
 .idea
 .idea/
+.env
