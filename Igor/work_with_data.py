@@ -23,5 +23,10 @@ import numpy as np
 
 # task_4
 
-a = np.arange(5, 15)
-print(f'{a[0]}, {a[-3:]}, {a[::2]}' )
+# a = np.arange(5, 15)
+# print(f'{a[0]}, {a[-3:]}, {a[::2]}' )
+
+# task_5
+
+a = np.random.randint(0,6,5)
+print(a)
