@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import pandas as pn
 
 #task 1
 # a = np.arange(10)
@@ -35,10 +34,15 @@ import pandas as pn
 
 # task_6
 
-bamboo = pd.DataFrame({
-    'Name': ["Igor", "Andrey", "Edward", "Tema"],
-    'Age': [21, 22, 25, 30],
-    'City': ["Prague","London","Paris","Russia"]
-})
+# bamboo = pd.DataFrame({
+#     'Name': ["Igor", "Andrey", "Edward", "Tema"],
+#     'Age': [21, 22, 25, 30],
+#     'City': ["Prague","London","Paris","Russia"]
+# })
+#
+# print(bamboo)
 
-print(bamboo)
+# task_7
+
+bamboo = pd.read_csv("C:\\Users\\Игорь\\Desktop\\northwind-SQLite3-main\\northwind-SQLite3-main\\docs\\SCV 100 KB.csv")
+print(bamboo.head(5))
