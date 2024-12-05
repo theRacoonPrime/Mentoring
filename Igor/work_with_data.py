@@ -1,4 +1,6 @@
 import numpy as np
+import pandas as pd
+import pandas as pn
 
 #task 1
 # a = np.arange(10)
@@ -28,5 +30,15 @@ import numpy as np
 
 # task_5
 
-a = np.random.randint(0,6,5)
-print(a)
+# a = np.random.randint(0,6,5)
+# print(a)
+
+# task_6
+
+bamboo = pd.DataFrame({
+    'Name': ["Igor", "Andrey", "Edward", "Tema"],
+    'Age': [21, 22, 25, 30],
+    'City': ["Prague","London","Paris","Russia"]
+})
+
+print(bamboo)
