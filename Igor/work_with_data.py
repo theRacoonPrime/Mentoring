@@ -44,5 +44,13 @@ import pandas as pd
 
 # task_7
 
-bamboo = pd.read_csv("C:\\Users\\Игорь\\Desktop\\northwind-SQLite3-main\\northwind-SQLite3-main\\docs\\SCV 100 KB.csv")
-print(bamboo.head(5))
+# bamboo = pd.read_csv("C:\\Users\\Игорь\\Desktop\\northwind-SQLite3-main\\northwind-SQLite3-main\\docs\\SCV 100 KB.csv")
+# print(bamboo.head(5))
+
+# task_8
+
+# csv_path = "C:\\Users\\Игорь\\PycharmProjects\\KNB\\Igor\\data for work\\archive\\age_gender.csv"
+#
+# bamboo = pd.read_csv(csv_path)
+# age = bamboo[bamboo["age"] > 25]
+# print(age)
