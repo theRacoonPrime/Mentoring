@@ -54,3 +54,15 @@ import pandas as pd
 # bamboo = pd.read_csv(csv_path)
 # age = bamboo[bamboo["age"] > 25]
 # print(age)
+
+# task_10
+
+bamboo = pd.DataFrame({
+     'Name': ["Igor", "Andrey", "Edward", "Tema"],
+     'Age': [21, 22, 25, 30],
+     'City': ["Prague","London","Paris","Russia"],
+})
+
+bamboo["Salary"] = np.random.randint(10000, 100000, size =len(bamboo))
+
+print(bamboo)
