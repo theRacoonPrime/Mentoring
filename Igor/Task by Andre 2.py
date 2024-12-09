@@ -1011,3 +1011,49 @@
 #         print('No')
 # else:
 #     print('The number must be between 1 and 8')
+
+# task
+
+import random
+
+def start_game():
+    print("Hello, I am a new super game, simple as two pennies.")
+
+    while True:
+        print("\nI guessed a number between 1 and 100. Try to guess it!")
+
+        comp_choice = random.randint(1, 100)
+
+        while True:
+            try:
+                guess = int(input('Enter your assumption: '))
+            except ValueError:
+                print('Please enter only numbers')
+                continue
+
+            if guess < comp_choice:
+                diff = comp_choice - guess
+                if diff > 10:
+                    print("No, you're wrong, it's more than 10.")
+                elif diff > 5:
+                    print("No, you're wrong, it's more than 5.")
+                else:
+                    print("No, you're wrong. It's a bit more.")
+            elif guess > comp_choice:
+                diff = guess - comp_choice
+                if diff > 10:
+                    print("No, you're wrong, there are less than 10.")
+                elif diff > 5:
+                    print("No, you're wrong, there are less than 5")
+                else:
+                    print("No, you're wrong. It's a bit less.")
+            else:
+                print(f"Congratulations! You guessed the number {comp_choice}. Do")
+                break
+
+        play_again = input("Do you want to play again? (yes/no): ").strip().lower()
+        if play_again != 'yes':
+            print("Thanks for playing! Goodbye!")
+            break
+
+start_game()
